@@ -1,10 +1,10 @@
 body {background-color: white;}
-body {border: 20px solid purple;}
-body {padding: 40px;}
 
+#first {border: 20px solid purple;}
+#first {padding: 40px;}
 #first {background-color: gray;}
 #first {font-size: 64px;}
-
 #first {text-align: center;}
+
 
 
