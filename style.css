@@ -1,11 +1,22 @@
-body {background-color: white;}
+body {
+	background-image: url("Project 3.jpeg");
+}
 
-#first {border: 20px solid purple;}
-#first {padding: 40px;}
-#first {background-color: gray;}
-#first {font-size: 64px;}
-#first {text-align: center;}
-#first {font-family: cursive;}
+.jumbotron{border: 20px solid #2D5655;
+     padding: 40px;
+     background-color: gray;
+     font-size: 64px;
+     text-align: center;
+     font-family: cursive}
+
+#first {
+
+ }
+
+ #Project 3.jpeg {  
+ 	height: auto; 
+    width: 80% 
+}
 
 
 
