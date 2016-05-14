@@ -29,6 +29,10 @@ main {
 }
 
 
+.queen-of-computers {
+  width: 630px;
+}
+
 .image-container {
   display: flex;
   flex-direction: column;
