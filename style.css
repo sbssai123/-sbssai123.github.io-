@@ -16,9 +16,8 @@ main {
 }
  .mySlides{
    display: block;
-margin-left: auto;
 margin-right: auto
-margin-left: 250px;
+margin-left: 1000px;
  }
 
 .jumbotron h1 {
