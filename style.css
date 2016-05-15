@@ -16,8 +16,10 @@ main {
   margin-bottom: 15px;
 }
  .mySlides{
-margin-left: 300px;
-margin-right: auto;
+   height: 10em;
+   display: flex;
+   align-items: center;
+   justify-content: center
  }
 
 .jumbotron h1 {
