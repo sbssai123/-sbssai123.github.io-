@@ -81,7 +81,7 @@ p {
   color: #333;
 }
 
-.slide: before {
+.slide:before {
   position: relative;
   padding: 25vh 10%;
   min-height: 80vh;
