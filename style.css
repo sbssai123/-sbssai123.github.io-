@@ -14,14 +14,11 @@ main {
   padding: 20px 0px;
   margin-bottom: 15px;
 }
-
-.carousel-inner {
-  margin-left: 250px;
-  display: block;
-  max-width: 100%;
-  height: auto;
-
-}
+ .w3-content w3-section {
+   display: block;
+margin-left: auto;
+margin-right: auto
+ }
 
 .jumbotron h1 {
   font-family: 'Lobster', cursive;
