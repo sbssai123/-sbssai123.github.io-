@@ -90,15 +90,3 @@ p {
   box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
 	transform-style: inherit;
 }
-
-
-
-
-
-
-.header {
-  text-align: center;
-  font-size: 175%;
-  color: #fff;
-  text-shadow: 0 2px 2px #000;
-}
