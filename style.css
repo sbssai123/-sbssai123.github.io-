@@ -8,10 +8,6 @@ main {
   text-align: center;
 }
 
-.carousel-inner{
-  margin-left: 30%;
-}
-
 .jumbotron {
   background-color: #f3c3c3;
   box-shadow: 0px 4px 32px -8px rgb(76, 73, 73);
