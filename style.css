@@ -16,11 +16,9 @@ main {
   margin-bottom: 15px;
 }
  .mySlides{
-   position: absolute;
            margin-top: 50%;
            margin-left: 50%;
            margin-right: -50%;
-           transform: translate(-50%, -50%)
  }
 
 .jumbotron h1 {
