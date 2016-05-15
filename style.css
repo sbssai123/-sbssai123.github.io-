@@ -8,7 +8,7 @@ main {
   text-align: center;
 }
 
-.carousel-slide {
+#myCarousel{
   margin-left: 50%;
 }
 
