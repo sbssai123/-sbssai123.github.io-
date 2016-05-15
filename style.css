@@ -8,8 +8,8 @@ main {
   text-align: center;
 }
 
-#myCarousel{
-  margin-left: 50%;
+.carousel-inner{
+  margin-left: 30%;
 }
 
 .jumbotron {
