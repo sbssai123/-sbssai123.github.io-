@@ -84,8 +84,8 @@ p {
 .slide {
   position: relative;
   padding: 25vh 10%;
-  min-height: 90vh;
-  width: 90vw;
+  min-height: 80vh;
+  width: 95vw;
   box-sizing: border-box;
   box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
 	transform-style: inherit;
