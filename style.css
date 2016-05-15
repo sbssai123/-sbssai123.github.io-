@@ -8,6 +8,9 @@ main {
   text-align: center;
 }
 
+.carousel-inner {
+  margin-left: 50%;
+}
 
 .jumbotron {
   background-color: #f3c3c3;
