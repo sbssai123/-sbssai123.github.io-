@@ -15,10 +15,7 @@ main {
   padding: 20px 0px;
   margin-bottom: 15px;
 }
- .mySlides{
-   display: flex;
-   align-items: center
- }
+
 
 .jumbotron h1 {
   font-family: 'Lobster', cursive;
