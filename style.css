@@ -22,6 +22,7 @@ main {
 
 .jumbotron h3 {
   font-family: 'Lobster';
+  margin-top: 20px;
 }
 
 .jumbotron i {
