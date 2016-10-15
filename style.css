@@ -20,6 +20,10 @@ main {
   font-family: 'Lobster', cursive;
 }
 
+.jumbotron h3 {
+  font-family: 'Lobster';
+}
+
 .jumbotron i {
   padding-left: 6px;
 }
