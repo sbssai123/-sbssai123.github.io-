@@ -12,9 +12,10 @@ main {
   background-color: #ffffff;
 }
 
-#nav ul{
+.navbar .navbar-nav {
   display: inline-block;
-  list-style-type: none;
+  float: none;
+  vertical-align: top;
 }
 
 .jumbotron {
