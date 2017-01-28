@@ -10,6 +10,8 @@ main {
 
 .navbar-default {
   background-color: #ffffff;
+  display: inline-block;
+  list-style-type: none;
 }
 
 .jumbotron {
