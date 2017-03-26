@@ -1,0 +1,20 @@
+.header {
+  background-image: url("sunset.jpg");
+  min-height: 100%;
+  background-size: cover;
+  opacity: 0.65;
+  position: relative;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header-text {
+  position: absolute;
+  text-align: center;
+  color: black;
+}
+
+.header-text span.border {
+  font-size: 25px;
+  letter-spacing: 10px;
+}
