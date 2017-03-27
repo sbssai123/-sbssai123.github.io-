@@ -40,6 +40,20 @@ h2 {
   padding: 15px;
 }
 
+#learn-more{
+  position: relative;
+  top: 100px;
+  text-decoration: none;
+  padding: 0px;
+}
+
+
+#learn-more h4 {
+  color: white;
+  text-decoration: none;
+  margin-top: 0;
+}
+
 .about-me {
   padding: 20px;
   height: 650px;
