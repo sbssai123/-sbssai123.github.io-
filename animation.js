@@ -13,7 +13,7 @@ $(document).ready(function(){
   });
 });
 
-// Fade down button when mouse hovers over
+// Fade down button in home screen when mouse hovers over
 $(document).ready(function() {
   $("#learn-more img, #learn-more, #learn-more h4").hover(
     function() {
@@ -23,6 +23,15 @@ $(document).ready(function() {
       $(this).stop().animate({"opacity": 1});
     }
   )
+});
+
+// hover for vertical dot nav bar
+$(document).ready(function($){
+     $('.Navbar a').hover(function() {
+         $(this).find('.label').show();
+         }, function() {
+         $(this).find('.label').hide();
+     });
 });
 
 
