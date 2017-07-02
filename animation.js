@@ -34,6 +34,19 @@ $(document).ready(function($){
      });
 });
 
+$(document).ready(function() {
+  $(".Navbar").hide(); //Hide the navigation bar first
+  $(document).on('scroll', function() {
+      if($(this).scrollTop()>=$('#about').position().top){
+        $('.Navbar').show(); //Show the navigation bar
+      } else {
+          $('.Navbar').hide(); //Else hide it
+        }
+  });
+});
+
+
+
 
 // chart animations
 Chart.defaults.global.animation.duration = 2500;
