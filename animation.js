@@ -24,3 +24,31 @@ $(document).ready(function() {
     }
   )
 });
+
+
+// chart animations
+Chart.defaults.global.animation.duration = 2500;
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    datasets: [{
+      data: [60]
+    }],
+    labels: [
+      'Java'
+    ]
+  },
+  options: {
+    rotation: .7 * Math.PI,
+    circumference: 1.5 * Math.PI,
+    tooltips: {enabled: false},
+    hover: {mode: null},
+ legend: {
+   display: false,
+     labels: {
+       display: false
+     }
+   }
+ }
+});

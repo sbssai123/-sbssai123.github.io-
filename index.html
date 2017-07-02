@@ -3,18 +3,22 @@
 <head>
   <title>Sreeya Sai</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--chart.js library-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
   <link rel="stylesheet"
   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
   </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+
   <link rel="stylesheet" type="text/css" href="style.css">
   <script type="text/javascript" src="animation.js"></script>
 </head>
-   <body>
 
-     <!-- Starting componenet-->
+   <body>
+     <!-- Starting component-->
      <div class="container-fluid" id="header">
        <div class= "head-background"></div>
        <div class="header-text">
@@ -46,6 +50,47 @@
      <div class="container-fluid" id="skills">
        <div class="skill-background"></div>
          <h2>Skills</h2>
+
+         <div class="container">
+           <div class="row" id="about-content">
+          <div>
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <!--TODO: put this code in a separate file-->
+      <script>
+      Chart.defaults.global.animation.duration = 3000;
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          datasets: [{
+            data: [60],
+            backgroundColor: ["#a3c7c9"]
+          }],
+          labels: [
+            'Java'
+          ]
+        },
+        options: {
+          rotation: .7 * Math.PI,
+          circumference: 1.5 * Math.PI,
+          tooltips: {enabled: false},
+          hover: {mode: null},
+       legend: {
+         display: false,
+           labels: {
+             display: false
+           }
+         }
+       }
+      });
+      </script>
+
      </div>
+
+
    </body>
+
    </html>
