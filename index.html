@@ -90,58 +90,6 @@
         </div>
       </div>
 
-
-
-      <!--TODO: put this code in a separate file-->
-      <script>
-      Chart.defaults.global.animation.duration = 3000;
-      var ctx = document.getElementById("myChart");
-      var myChart = new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-          datasets: [{
-            data: [60],
-            backgroundColor: ["#a12e76"]
-          }],
-          labels: [
-            'Java'
-          ]
-        },
-        options: {
-          rotation: .7 * Math.PI,
-          circumference: 1.5 * Math.PI,
-          tooltips: {enabled: false},
-          hover: {mode: null},
-       legend: {
-         display: false,
-           labels: {
-             display: false
-           }
-         }
-       }
-      });var inView = false;
-      function isScrolledIntoView(elem)
-      {
-          var docViewTop = $(window).scrollTop();
-          var docViewBottom = docViewTop + $(window).height();
-
-          var elemTop = $(elem).offset().top;
-          var elemBottom = elemTop + $(elem).height();
-
-          return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
-      }
-
-      $(window).scroll(function() {
-          if (isScrolledIntoView('#myChart')) {
-              if (inView) { return; }
-              inView = true;
-              new Chart(document.getElementById("myChart").getContext("2d")).Doughnut(data);
-          } else {
-              inView = false;
-          }
-      });
-      </script>
-
      </div>
 
 

@@ -73,53 +73,47 @@ $(document).ready(function() {
 });
 
 
-var inView = false;
-function isScrolledIntoView(elem)
-{
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
 
-    return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
-}
-
-$(window).scroll(function() {
-    if (isScrolledIntoView('#myChart')) {
-        if (inView) { return; }
-        inView = true;
-        new Chart(document.getElementById("myChart").getContext("2d")).Pie(data);
-    } else {
-        inView = false;
-    }
+$(function() {
+    var oTop = $('#skills').offset().top - window.innerHeight;
+    var chartHidden = true;
+    $(window).scroll(function(){
+        var pTop = $('body').scrollTop();
+        if ((pTop > oTop) && (chartHidden)) {
+            chartHidden = false;
+            start_count();
+        }
+    });
 });
-
 
 
 // chart animations
-Chart.defaults.global.animation.duration = 2500;
-var ctx = document.getElementById("myChart");
-var myChart = new Chart(ctx, {
-  type: 'doughnut',
-  data: {
-    datasets: [{
-      data: [60]
-    }],
-    labels: [
-      'Java'
-    ]
-  },
-  options: {
-    rotation: .7 * Math.PI,
-    circumference: 1.5 * Math.PI,
-    tooltips: {enabled: false},
-    hover: {mode: null},
- legend: {
-   display: false,
-     labels: {
-       display: false
+function start_count(){
+  Chart.defaults.global.animation.duration = 3000;
+  var ctx = document.getElementById("myChart");
+  var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      datasets: [{
+        data: [60],
+        backgroundColor: ["#a12e76"]
+      }],
+      labels: [
+        'Java'
+      ]
+    },
+    options: {
+      rotation: .7 * Math.PI,
+      circumference: 1.5 * Math.PI,
+      tooltips: {enabled: false},
+      hover: {mode: null},
+   legend: {
+     display: false,
+       labels: {
+         display: false
+       }
      }
    }
- }
-});
+ });
+}
