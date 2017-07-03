@@ -12,6 +12,7 @@
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
   </script>
+  <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
 
   <link rel="stylesheet" type="text/css" href="style.css">
   <script type="text/javascript" src="animation.js"></script>
@@ -58,12 +59,12 @@
        <div class="col-sm-4" id="headshot">
          <img src="me.jpg" alt="headshot" height="350" width="350">
        </div>
-       <div class="col-sm-1"></div>
        <div class="col-sm-7">
          <h3 id="about-heading">Hi! My Name is Sreeya!</h3>
-         <p id="about-paragraph">I am currently a 2nd year computer science major
+         <p id="about-paragraph">I am currently a 3rd year computer science major
          at Northeastern University located in Boston, MA.</p>
        </div>
+       <div class="col-sm-1"></div>
      </div>
      </div>
 
@@ -71,12 +72,21 @@
      <div class="container-fluid" id="skills">
        <div class="skill-background"></div>
          <h2>Skills</h2>
-
-         <div class="container">
-           <div class="row" id="about-content">
+         <div class="row" id="skills section">
+           <div class="col-sm-4">
+          <h4>Programming Languages</h4>
+        </div>
+        <div class="col-sm-8"></div>
+        </div>
+         <div class="row" id="charts">
+             <div class="col-sm-3">
+               <div class="container">
           <div>
             <canvas id="myChart"></canvas>
           </div>
+        </div>
+        <div class="col-sm-9">
+        </div>
         </div>
       </div>
 
@@ -91,7 +101,7 @@
         data: {
           datasets: [{
             data: [60],
-            backgroundColor: ["#a3c7c9"]
+            backgroundColor: ["#a12e76"]
           }],
           labels: [
             'Java'
@@ -109,6 +119,26 @@
            }
          }
        }
+      });var inView = false;
+      function isScrolledIntoView(elem)
+      {
+          var docViewTop = $(window).scrollTop();
+          var docViewBottom = docViewTop + $(window).height();
+
+          var elemTop = $(elem).offset().top;
+          var elemBottom = elemTop + $(elem).height();
+
+          return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
+      }
+
+      $(window).scroll(function() {
+          if (isScrolledIntoView('#myChart')) {
+              if (inView) { return; }
+              inView = true;
+              new Chart(document.getElementById("myChart").getContext("2d")).Doughnut(data);
+          } else {
+              inView = false;
+          }
       });
       </script>
 

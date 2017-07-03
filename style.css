@@ -1,4 +1,3 @@
-
 html body {
     top:0;
     bottom:0;
@@ -94,7 +93,8 @@ h3 {
 #about-heading {
   font-family: cursive;
   font-size: 60px;
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-left: 40px;
   text-align: center;
   color: rgb(243, 172, 231);
 }
@@ -102,7 +102,8 @@ h3 {
 #about-paragraph {
   color: white;
   margin-top: 15px;
-  font-size: 23px;
+  margin-left: 40px;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -136,9 +137,16 @@ h3 {
   margin-top: 40px;
 }
 
+#skills h4 {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  font-family: 'Indie Flower';
+}
+
 
 .container {
-  width: 20%;
+  width: 100%;
   margin: 15px auto;
 }
 
@@ -146,6 +154,7 @@ h3 {
 
 .Navbar {
     position: fixed;
+    display: none;
     top: 43%;
     left: 90%;
     width: 50px;
@@ -163,7 +172,7 @@ h3 {
     position: relative;
     padding-bottom: 20px;
     padding-left: 35%;
-    color: rgb(113,135,133);
+    color: rgb(255,255,255);
 }
 
 .Navbar a{
@@ -173,19 +182,19 @@ h3 {
     text-indent: -9999px;
     border-radius: 80%;
     border: 2px solid;
-    border-color: rgb(113,135,133);
+    border-color: rgb(255,255,255);
     text-decoration: none;
 }
 
 .Navbar a:hover{
     border-radius: 80%;
-    background-color: rgb(113,135,133);
+    background-color: rgb(161, 46, 118);
     text-decoration: none;
 }
 
 .Navbar a.active{
     border-radius: 80%;
-    background-color: rgb(207,219,218);
+    background-color: rgb(161, 46, 118);
     text-decoration: none;
 }
 
@@ -196,6 +205,6 @@ h3 {
     width: 100%;
     text-align: right;
     font-size: 1em;
-    color: rgb(113,135,133);
+    color: rgb(255,255,255);
     display: none;
 }
