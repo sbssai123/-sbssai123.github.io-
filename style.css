@@ -12,6 +12,64 @@ body {
   background-color: black;
 }
 
+/* Navbar design */
+.Navbar {
+    position: fixed;
+    display: none;
+    top: 43%;
+    left: 90%;
+    width: 50px;
+    z-index: 9999;
+    list-style-type: none;
+}
+
+.Navbar ul {
+    position: relative;
+    padding: 3px;
+    padding-left: 35%;
+}
+
+.Navbar ul li{
+    position: relative;
+    padding-bottom: 20px;
+    padding-left: 35%;
+    color: rgb(255,255,255);
+}
+
+.Navbar a{
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-indent: -9999px;
+    border-radius: 80%;
+    border: 2px solid;
+    border-color: rgb(255,255,255);
+    text-decoration: none;
+}
+
+.Navbar a:hover{
+    border-radius: 80%;
+    background-color: rgb(161, 46, 118);
+    text-decoration: none;
+}
+
+.Navbar a.active{
+    border-radius: 80%;
+    background-color: rgb(161, 46, 118);
+    text-decoration: none;
+}
+
+.label {
+    position: relative;
+    top: -60%;
+    left: -200%;
+    width: 100%;
+    text-align: right;
+    font-size: 1em;
+    color: rgb(255,255,255);
+    display: none;
+}
+
 #header {
   padding: 0;
   margin: 0;
@@ -135,76 +193,39 @@ h3 {
   font-size: 70px;
   font-family: cursive;
   margin-top: 40px;
+  text-decoration: underline;
 }
 
 #skills h4 {
   text-align: center;
-  font-size: 40px;
+  margin: 0px;
+  font-size: 30px;
+  font-weight: bold;
   color: rgb(255, 255, 255);
-  font-family: 'Indie Flower';
+  font-family: 'Cutive Mono';
 }
 
+
+#language-charts h6 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 25px;
+  font-family: 'Cutive Mono';
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+#language-charts p {
+  text-align: center;
+  margin-top: -87px;
+  margin-left: 125px;
+  position: absolute;
+  color: #ffffff;
+  font-size: 20px;
+}
 
 .container {
-  width: 100%;
+  position: relative;
+  width: 110%;
   margin: 15px auto;
-}
-
-
-
-.Navbar {
-    position: fixed;
-    display: none;
-    top: 43%;
-    left: 90%;
-    width: 50px;
-    z-index: 9999;
-    list-style-type: none;
-}
-
-.Navbar ul {
-    position: relative;
-    padding: 3px;
-    padding-left: 35%;
-}
-
-.Navbar ul li{
-    position: relative;
-    padding-bottom: 20px;
-    padding-left: 35%;
-    color: rgb(255,255,255);
-}
-
-.Navbar a{
-    display: block;
-    width: 15px;
-    height: 15px;
-    text-indent: -9999px;
-    border-radius: 80%;
-    border: 2px solid;
-    border-color: rgb(255,255,255);
-    text-decoration: none;
-}
-
-.Navbar a:hover{
-    border-radius: 80%;
-    background-color: rgb(161, 46, 118);
-    text-decoration: none;
-}
-
-.Navbar a.active{
-    border-radius: 80%;
-    background-color: rgb(161, 46, 118);
-    text-decoration: none;
-}
-
-.label {
-    position: relative;
-    top: -60%;
-    left: -200%;
-    width: 100%;
-    text-align: right;
-    font-size: 1em;
-    color: rgb(255,255,255);
-    display: none;
 }

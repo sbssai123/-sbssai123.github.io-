@@ -74,7 +74,8 @@ $(document).ready(function() {
 
 
 
-
+//Start chart animation when page gets to the skills section
+// for the first time
 $(function() {
     var oTop = $('#skills').offset().top - window.innerHeight;
     var chartHidden = true;
@@ -82,22 +83,24 @@ $(function() {
         var pTop = $('body').scrollTop();
         if ((pTop > oTop) && (chartHidden)) {
             chartHidden = false;
-            start_count();
+            start_count("java-chart", 80, 20);
+            start_count("python-chart", 90, 10);
+            start_count("js-chart", 50, 50);
         }
     });
 });
 
 
 // chart animations
-function start_count(){
+function start_count(idelement, p1, p2){
   Chart.defaults.global.animation.duration = 3000;
-  var ctx = document.getElementById("myChart");
+  var ctx = document.getElementById(idelement);
   var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
       datasets: [{
-        data: [60],
-        backgroundColor: ["#a12e76"]
+        data: [p1, p2],
+        backgroundColor: ["#a12e76", "#ffffff"]
       }],
       labels: [
         'Java'
@@ -105,7 +108,7 @@ function start_count(){
     },
     options: {
       rotation: .7 * Math.PI,
-      circumference: 1.5 * Math.PI,
+      circumference: 2 * Math.PI,
       tooltips: {enabled: false},
       hover: {mode: null},
    legend: {
