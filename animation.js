@@ -86,6 +86,8 @@ $(function() {
             start_count("java-chart", 80, 20);
             start_count("python-chart", 90, 10);
             start_count("js-chart", 50, 50);
+            start_count("sql-chart", 60, 40);
+            start_count("html-chart", 80, 20);
         }
     });
 });
