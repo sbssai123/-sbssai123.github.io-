@@ -173,7 +173,7 @@ h3 {
 .container-fluid .skill-background {
   background-image: url("workplace.jpg");
   background-position: 100% top;
-  opacity: .45;
+  opacity: .50;
   height: 700px;
   width: 100%;
   min-height: 100%;
@@ -199,10 +199,10 @@ h3 {
 #skills h4 {
   text-align: center;
   margin: 0px;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   color: rgb(255, 255, 255);
-  font-family: 'Cutive Mono';
+  /*font-family: 'Cutive Mono';*/
 }
 
 
@@ -213,6 +213,7 @@ h3 {
   font-family: 'Cutive Mono';
   margin-top: 0px;
   margin-left: 90px;
+  color:
 }
 
 #language-charts p {
