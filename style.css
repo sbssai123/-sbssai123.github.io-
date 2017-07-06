@@ -236,18 +236,19 @@ h3 {
   text-align: left;
 }
 
-#spacing {
-  margin: 30px;
+.spacing {
+  margin: 60px;;
 }
 
 /* Fix this */
 #experience {
   padding: 20px;
-  height: 1000px;
   margin: 0;
   text-align: center;
   margin: 0 auto;
-  background-size: cover;
   background: black;
   background: linear-gradient(black, rgb(47, 15, 47));
+  background-size: cover;
+  min-height: 100%;
+  height: 1000px;
 }
