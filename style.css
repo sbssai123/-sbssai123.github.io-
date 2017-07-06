@@ -127,13 +127,13 @@ h2 {
 
 #about {
   padding: 20px;
-  height: 700px;
   margin: 0;
   text-align: center;
   margin: 0 auto;
-  background-size: cover;
   background: black;
   background: linear-gradient(black, rgb(47, 15, 47));
+  background-size: cover;
+  min-height: 100%;
 }
 
 h3 {
@@ -173,8 +173,7 @@ h3 {
 .container-fluid .skill-background {
   background-image: url("workplace.jpg");
   background-position: 100% top;
-  opacity: .50;
-  height: 700px;
+  opacity: .6;
   width: 100%;
   min-height: 100%;
   background-size: cover;
@@ -185,24 +184,23 @@ h3 {
   left: 0;
   right: 0;
   position: absolute;
-
 }
 
-#skills h2 {
+.section-heading {
   text-align: center;
   font-size: 70px;
   font-family: cursive;
-  margin-top: 40px;
+  margin-top: 20px;
   text-decoration: underline;
 }
 
 #skills h4 {
-  text-align: center;
+  text-align: left;
   margin: 0px;
   font-size: 35px;
   font-weight: bold;
-  color: rgb(255, 255, 255);
-  /*font-family: 'Cutive Mono';*/
+  color: white;
+   -webkit-text-stroke: 2.2px rgb(161, 46, 118);
 }
 
 
@@ -213,7 +211,6 @@ h3 {
   font-family: 'Cutive Mono';
   margin-top: 0px;
   margin-left: 90px;
-  color:
 }
 
 #language-charts p {
@@ -230,4 +227,27 @@ h3 {
   position: relative;
   width: 160%;
   margin: 15px auto;
+}
+
+.tech-list {
+  font-size: 23px;
+  font-family: 'Cutive Mono';
+  color: #ffffff;
+  text-align: left;
+}
+
+#spacing {
+  margin: 20px;
+}
+
+/* Fix this */
+#experience {
+  padding: 20px;
+  height: 1000px;
+  margin: 0;
+  text-align: center;
+  margin: 0 auto;
+  background-size: cover;
+  background: black;
+  background: linear-gradient(black, rgb(47, 15, 47));
 }
