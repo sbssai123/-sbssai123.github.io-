@@ -78,7 +78,7 @@ body {
 }
 
 .head-background{
-  background-image: url("dark-sky.jpg");
+  background-image: url("img/dark-sky.jpg");
   background-position: 100% top;
   opacity: .95;
   height: 700px;
@@ -171,7 +171,7 @@ h3 {
 }
 
 .container-fluid .skill-background {
-  background-image: url("workplace.jpg");
+  background-image: url("img/workplace.jpg");
   background-position: 100% top;
   opacity: .6;
   width: 100%;
@@ -191,7 +191,7 @@ h3 {
   font-size: 70px;
   font-family: cursive;
   margin-top: 30px;
-  text-decoration: underline;
+  /**text-decoration: underline;**/
 }
 
 #skills h4 {
