@@ -90,7 +90,6 @@ $(document).ready(function() {
 });
 
 
-
 //Start chart animation when page gets to the skills section
 // for the first time
 $(function() {
