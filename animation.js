@@ -73,6 +73,22 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  $(window).scroll(function() {
+    var oTop = $('.rectangle').offset().top + 150 - window.innerHeight;
+    var pTop = $('body').scrollTop();
+    if (pTop > oTop) {
+      $('#experience img').delay(500).fadeIn(300);
+      $('.r-right').stop().animate({right: '0px'}, 600);
+      $('.r-left').stop().animate({left: '0px'}, 600);
+    } else {
+        $('#experience img').hide();
+        $('.r-right').stop().animate({right: '-1000px'}, 600);
+        $('.r-left').stop().animate({left: '-1000px'}, 600);
+    }
+  });
+});
+
 
 
 //Start chart animation when page gets to the skills section
@@ -92,7 +108,6 @@ $(function() {
         }
     });
 });
-
 
 // chart animations
 function start_count(idelement, p1, p2){
