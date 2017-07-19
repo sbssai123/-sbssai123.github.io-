@@ -241,7 +241,6 @@ h3 {
   margin: 60px;;
 }
 
-/* Fix this */
 #experience {
   text-align: center;
   margin: 0 auto;
@@ -298,6 +297,17 @@ h3 {
   text-align: left;
   margin-top: -10px;
   margin-left: 14px;
-  font: italic 25px Serif;
+  font: italic 27px Serif;
   color: white;
+}
+
+.exp-description {
+  font: 23px Times;
+  text-align: left;
+  margin-left: 10px;
+  color: black;
+}
+.exp-description b {
+  color: white;
+  font-weight: 400;
 }

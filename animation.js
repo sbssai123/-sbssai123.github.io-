@@ -93,7 +93,7 @@ $(function() {
     var chartHidden = true;
     $(window).scroll(function(){
         var pTop = $('body').scrollTop();
-        if ((pTop > oTop) && (chartHidden)) {
+        if ((pTop > oTop)  && (chartHidden)) {
             chartHidden = false;
             start_count("java-chart", 80, 20);
             start_count("python-chart", 90, 10);
