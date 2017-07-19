@@ -254,15 +254,18 @@ h3 {
 }
 
 .rectangle {
+  display: none;
   margin-top: 50px;
   width: 75%;
   height: 200px;
   background-color: rgba(243, 172, 231, .7);
   border: 5px solid rgb(161, 46, 118);
+  margin-bottom: 35px;
 }
 
 
 #experience img {
+  display: none;
   margin-top: 75px;
   border-radius: 50%;
   border: 5px solid rgb(161, 46, 118);
