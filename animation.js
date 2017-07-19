@@ -73,18 +73,23 @@ $(document).ready(function() {
   });
 });
 
+// Animations for experience section
 $(document).ready(function() {
   $(window).scroll(function() {
     var oTop = $('.rectangle').offset().top + 150 - window.innerHeight;
     var pTop = $('body').scrollTop();
     if (pTop > oTop) {
       $('#experience img').delay(500).fadeIn(300);
-      $('.r-right').stop().animate({right: '0px'}, 600);
-      $('.r-left').stop().animate({left: '0px'}, 600);
+      $('.r-left').show("slide", { direction: "left" }, 1000);
+      $('.r-right').show("slide", { direction: "right" }, 1000);
+      //$('.r-right').stop().animate({right: '0'}, 1000);
+      //$('.r-left').stop().animate({left: '0'}, 1000);
     } else {
         $('#experience img').hide();
-        $('.r-right').stop().animate({right: '-1000px'}, 600);
-        $('.r-left').stop().animate({left: '-1000px'}, 600);
+        $('.r-left').hide("slide", { direction: "left" }, 1000);
+        $('.r-right').hide("slide", { direction: "right" }, 1000);
+        //$('.r-right').stop().animate({right: '-=50'}, 1000);
+        //$('.r-left').stop().animate({left: '-=50'}, 1000);
     }
   });
 });
