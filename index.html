@@ -38,28 +38,15 @@
      <!-- Navigation Bar-->
      <div class="Navbar">
          <ul class="Navbar">
-              <li> <a href="#header">
-                      <div class="label">Home</div>
-                  </a>
-              </li>
-              <li> <a href="#about">
-                      <div class="label">About Me</div>
-                  </a>
-              </li>
-              <li> <a href="#skills">
-                      <div class="label">Skills</div>
-                  </a>
-              </li>
-              <li> <a href="#experience">
-                      <div class="label">Experience</div>
+              <li ng-repeat="section in sections"> <a href="{{ '#'+ section.id }}">
+                      <div class="label"> {{ section.name }}</div>
                   </a>
               </li>
        </ul>
       </div>
 
-
      <!-- Header component-->
-     <div class="container-fluid" id="header">
+     <div class="container-fluid" id="home">
        <div class= "head-background"></div>
        <div class="header-text">
          <span class="border">SREEYA SAI</span>

@@ -27,4 +27,22 @@ app.controller('MainController', [ '$scope',
         percentage: '80%'
       }
     ];
+    $scope.sections = [
+      {
+        id: 'home',
+        name: 'Home'
+      },
+      {
+        id: 'about',
+        name: 'About Me'
+      },
+      {
+        id: 'skills',
+        name: 'Skills'
+      },
+      {
+        id: 'experience',
+        name: 'Experience'
+      }
+    ];
   }]);
