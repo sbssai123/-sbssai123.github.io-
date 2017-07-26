@@ -15,15 +15,26 @@
   src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
   integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
   crossorigin="anonymous"></script>
+  <!--Bootstrap-->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
   </script>
+  <!--Font-->
   <link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'>
+  <!-- Angular.js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <!-- Modules -->
+  <script src="js/app.js"></script>
+  <!-- Controllers -->
+  <script src="js/MainController.js"></script>
+  <!-- Directive -->
+  <script src="js/directives/chartInfo.js"></script>
 
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script type="text/javascript" src="animation.js"></script>
+  <script type="text/javascript" src="js/animation.js"></script>
 </head>
 
-   <body>
+   <body ng-app="PersonalWebsite" ng-controller="MainController">
+
      <!-- Navigation Bar-->
      <div class="Navbar">
          <ul class="Navbar">
@@ -47,7 +58,7 @@
       </div>
 
 
-     <!-- Starting component-->
+     <!-- Header component-->
      <div class="container-fluid" id="header">
        <div class= "head-background"></div>
        <div class="header-text">
@@ -87,53 +98,10 @@
      <div class="container-fluid" id="skills">
        <div class="skill-background"></div>
          <h2 class="section-heading">Skills</h2>
-
          <div class="row" id="language-charts">
-             <div class="col-sm-2">
-               <div class="container">
-          <div>
-            <canvas id="java-chart"></canvas>
-            <p>80%</p>
-          </div>
-        </div>
-        <h6 id="java">Java</h6>
-      </div>
-      <div class="col-sm-2">
-        <div class="container">
-      <div>
-        <canvas id="python-chart"></canvas>
-        <p>90%</p>
-      </div>
-        </div>
-          <h6 id="python">Python</h6>
-        </div>
-        <div class="col-sm-2">
-          <div class="container">
-        <div>
-          <canvas id="js-chart"></canvas>
-          <p>50%</p>
-        </div>
-          </div>
-            <h6 id="JavaScript">JavaScript</h6>
-          </div>
-          <div class="col-sm-2">
-            <div class="container">
-          <div>
-            <canvas id="sql-chart"></canvas>
-            <p>60%</p>
-          </div>
-            </div>
-              <h6 id="SQL">SQL</h6>
-            </div>
-            <div class="col-sm-2">
-              <div class="container">
-            <div>
-              <canvas id="html-chart"></canvas>
-              <p>80%</p>
-            </div>
-              </div>
-                <h6 id="HTML">HTML & CSS</h6>
-              </div>
+           <div ng-repeat="chart in charts">
+           <chart-info info="chart"> </chart-info>
+         </div>
         <div class="col-sm-2">
         </div>
       </div>
@@ -170,9 +138,11 @@
      <div class="row spacing"></div>
      </div>
 
+
+
      <!-- Experience section -->
      <div class="container-fluid" id="experience">
-       <h2 class="section-heading">Experience & Education</h2>
+       <h2 class="section-heading">Experience & Leadership</h2>
        <div class="row">
         <div class="col-sm-10 rectangle r-left">
           <div class="row">
@@ -209,7 +179,7 @@
            <div class="row"><h5>Software Engineer Research Co-op</h5></div>
            <div class="row">
              <ul class="exp-description">
-               <li>Worked on the <b>Health Care Effectiveness Team</b> on
+               <li>Worked on the <b>Healthcare Effectiveness Team</b> on
                  <b>C<sup>2</sup>AP<sup>2</sup>E</b>, a cognitive conversational
                  agent to assist with physician-patient encounters</li>
                <li>Developed a method for understanding the exchange of information
@@ -224,12 +194,66 @@
      </div>
      <div class="row">
      <div class="col-sm-10 rectangle r-left">
-
+       <div class="row">
+         <div class=col-sm-9>
+           <h3>Northeastern CS Department <b>Boston, MA</b> </h3>
+         </div>
+         <div class=col-sm-3> <p id=date>Sept 2016 - Present</p></div>
+         </div>
+          <div class="row"><h5>Course Assistant for Fundamentals of Computer Science 1</h5></div>
+          <div class="row">
+            <ul class="exp-description">
+              <li>Tutor students in functional programming concepts individually and in lab settings.</li>
+              <li>Hold office hours and grade homework to monitor progress.</li>
+            </ul>
+          </div>
      </div>
-     <div class="col-sm-2"> </div>
+     <div class="col-sm-2">
+       <img class="experience-icon" src="img/school.png">
+     </div>
     </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <img class="experience-icon" src="img/woman.png">
+       </div>
+       <div class="col-sm-9 rectangle r-right">
+         <div class="row">
+           <div class=col-sm-9>
+             <h3>sheBos: All-Female and Non-Binary Hackathon <b>Boston, MA</b> </h3>
+           </div>
+           <div class=col-sm-3> <p id=date>Jun 2017 - Present</p></div>
+           </div>
+           <div class="row"><h5>Head of Logistics</h5></div>
+           <div class="row">
+             <ul class="exp-description">
+               <li>Definition of sheBos</li>
+               <li>Organize venue and supplies for 1,000 hackers in a campaign
+               to promote inclusion in tech.</li>
+             </ul>
+           </div>
+       </div>
+    </div>
+    <div class="row">
+    <div class="col-sm-10 rectangle r-left">
+      <div class="row">
+        <div class=col-sm-9>
+          <h3>American Cancer Society’s Relay For Life <b>Boston, MA</b> </h3>
+        </div>
+        <div class=col-sm-3> <p id=date>July 2016 - Present</p></div>
+        </div>
+         <div class="row"><h5>Fundraising Chair (2017), Website Chair (2016)</h5></div>
+         <div class="row">
+           <ul class="exp-description">
+             <li>Did stuff. This is just a filler.</li>
+             <li>Did stuff. This is just a filler.</li>
+           </ul>
+         </div>
+    </div>
+    <div class="col-sm-2">
+      <img class="experience-icon" src="img/ribbon.png">
+    </div>
+   </div>
  </div>
-
    </body>
 
    </html>
