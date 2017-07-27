@@ -29,6 +29,7 @@
   <script src="js/MainController.js"></script>
   <!-- Directive -->
   <script src="js/directives/chartInfo.js"></script>
+  <script src="js/directives/techInfo.js"></script>
 
   <link rel="stylesheet" type="text/css" href="style.css">
   <script type="text/javascript" src="js/animation.js"></script>
@@ -90,38 +91,12 @@
            <div ng-repeat="chart in charts">
            <chart-info info="chart"> </chart-info>
          </div>
-        <div class="col-sm-2">
-        </div>
+        <div class="col-sm-2"></div>
       </div>
       <div class="row">
-        <div class="col-sm-4">
-       <h4>Tools</h4>
-       <ul class="tech-list">
-         <li>Git/Github</li>
-         <li>MySQL</li>
-         <li>Android Studio</li>
-         <li>MongoDB</li>
-       </ul>
-     </div>
-     <div class="col-sm-4">
-     <h4>Libraries / Frameworks</h4>
-     <ul class="tech-list">
-       <li>jQuery</li>
-       <li>Natural Language Toolkit(NLTK)</li>
-       <li>scikit-learn (ML in Python)</li>
-       <li>Stanford Core NLP</li>
-       <li>Bootstrap</li>
-       <li>Pandas and Numpy </li>
-     </ul>
-   </div>
-   <div class="col-sm-3">
-   <h4>Other Software</h4>
-   <ul class="tech-list">
-     <li>Photoshop</li>
-     <li>Illustrator</li>
-     <li>InDesign</li>
-   </ul>
- </div>
+        <div ng-repeat="skill in techskills">
+          <tech-info info="skill"> </tech-info>
+        </div>
  <div class="col-sm-3"></div>
      </div>
      <div class="row spacing"></div>
