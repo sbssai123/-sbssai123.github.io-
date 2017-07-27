@@ -53,7 +53,7 @@ app.controller('MainController', [ '$scope',
         name: 'Projects'
       },
       {
-        id: 'cotact',
+        id: 'contact',
         name: 'Contact'
       }
     ];
