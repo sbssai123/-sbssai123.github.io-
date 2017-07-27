@@ -37,7 +37,7 @@
 
    <body ng-app="PersonalWebsite" ng-controller="MainController">
 
-     <!-- Navigation Bar-->
+     <!-- Side Navigation Bar-->
      <div class="Navbar">
          <ul class="Navbar">
               <li ng-repeat="section in sections"> <a href="{{ '#'+ section.id }}">
@@ -47,6 +47,7 @@
        </ul>
       </div>
 
+
      <!-- Header component-->
      <div class="container-fluid" id="home">
        <div class= "head-background"></div>
@@ -55,7 +56,6 @@
          <h2>~ Dreamer. Creator. Software Engineer ~</h2>
          <a id="learn-more" href="#about">
            <img src="img/menu_down_arrow.png" alt="down arrow">
-           <h4>Learn More</h4>
          </a>
        </div>
    </div>
@@ -229,6 +229,15 @@
   <h2 class="section-heading">Projects</h2>
   <div id="underline"></div>
   <h4>// Coding is so much fun!</h4>
+  <div class="row">
+    <div class="col-sm-1"> </div>
+    <div class="col-sm-6">
+        <h3 class="project-title">P.U.S.H.</h3>
+        <p class="project-description"> Hi this project did some cool things!</p>
+         </div>
+    <div class="col-sm-5"><img class="project-img" src="img/push.png"></div>
+  </div>
+  </div>
 </div>
 
  <!--Contact Section -->
