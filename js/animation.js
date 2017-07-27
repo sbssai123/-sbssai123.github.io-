@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 // Fade down button in home screen when mouse hovers over
 $(document).ready(function() {
-  $("#learn-more img, #learn-more, #learn-more h4", "#resume a h4").hover(
+  $("#learn-more img, #learn-more, #learn-more h4, #resume a h4").hover(
     function() {
       $(this).stop().animate({"opacity": .6});
     },
