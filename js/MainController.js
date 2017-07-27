@@ -17,9 +17,9 @@ app.controller('MainController', [ '$scope',
       { id: 'contact', name: 'Contact' }
     ];
     $scope.techskills = [
-      { title: 'Tools', techlist: ['Git/Github', 'MySQL', 'Android Studio', 'MongoDB'], size: 4},
+      { title: 'Tools', techlist: ['Git/Github', 'MySQL', 'Android Studio', 'MongoDB'], size: 3},
       { title: 'Libraries / Frameworks', techlist: ['jQuery', 'Natural Language Toolkit(NLTK)',
-      'scikit-learn (ML in Python)', 'Stanford Core NLP', 'Bootstrap'], size: 4},
+      'scikit-learn (ML in Python)', 'Stanford Core NLP', 'Bootstrap'], size: 5},
       { title: 'Other Software', techlist: ['Photoshop', 'Illustrator', 'InDesign'], size: 3}
     ];
   }]);
