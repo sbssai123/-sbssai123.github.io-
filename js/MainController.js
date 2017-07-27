@@ -43,6 +43,18 @@ app.controller('MainController', [ '$scope',
       {
         id: 'experience',
         name: 'Experience'
+      },
+      {
+        id: 'resume',
+        name: 'Resume'
+      },
+      {
+        id: 'projects',
+        name: 'Projects'
+      },
+      {
+        id: 'cotact',
+        name: 'Contact'
       }
     ];
   }]);
