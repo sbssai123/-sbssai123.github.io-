@@ -17,9 +17,9 @@ $(document).ready(function(){
 
 // Fade down button in home screen when mouse hovers over
 $(document).ready(function() {
-  $("#learn-more img, #learn-more, #learn-more h4, #resume a h4").hover(
+  $("#learn-more img, #learn-more, #learn-more h4, #resume h4").hover(
     function() {
-      $(this).stop().animate({"opacity": .6});
+      $(this).stop().animate({"opacity": .65});
     },
     function() {
       $(this).stop().animate({"opacity": 1});
@@ -73,7 +73,7 @@ $(document).ready(function() {
         }
   });
 });
-
+/**
 $(document).ready(function() {
   $(".rectangle").hide(); //Hide componenets first
   $('#experience img').hide();
@@ -85,7 +85,7 @@ $(document).ready(function() {
       }
   });
 });
-
+**/
 
 //Start chart animation when page gets to the skills section
 // for the first time
