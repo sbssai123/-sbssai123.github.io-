@@ -388,11 +388,18 @@ h3 {
 
 .project-img {
   margin-top: 40px;
-  margin-left:
   height: auto;
   width: auto;
   max-width: 500px;
   max-height: 500px;
+}
+
+.music-img {
+  margin-top: 40px;
+  height: auto;
+  width: auto;
+  max-width: 500px;
+  max-height: 600px;
 }
 
 .project-description {
