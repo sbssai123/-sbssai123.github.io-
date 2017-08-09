@@ -88,7 +88,7 @@ $(document).ready(function() {
 //Start chart animation when page gets to the skills section
 // for the first time
 $(function() {
-    var oTop = $('#skills').offset().top - window.innerHeight;
+    var oTop = $('#skills .section-heading').offset().top - window.innerHeight;
     var chartHidden = true;
     $(window).scroll(function(){
         var pTop = $('body').scrollTop();
