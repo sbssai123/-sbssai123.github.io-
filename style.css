@@ -391,14 +391,26 @@ h3 {
   margin-left:
   height: auto;
   width: auto;
-  max-width: 490px;
-  max-height: 490px;
+  max-width: 500px;
+  max-height: 500px;
 }
 
 .project-description {
   font: 25px times;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.code {
+  margin-right: 30px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(161, 46, 118);
+  padding: 10px 20px;
+}
+
+.code a {
+  text-decoration: none;
 }
 
 #contact {
