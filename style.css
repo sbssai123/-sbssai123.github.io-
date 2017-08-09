@@ -81,7 +81,7 @@ body {
   background-image: url("img/dark-sky.jpg");
   background-position: 100% top;
   opacity: .95;
-  height: 700px;
+  height: 800px;
   width: 100%;
   min-height: 100%;
   background-size: cover;
@@ -124,8 +124,8 @@ h2 {
   margin: 0 auto;
   background: black;
   background: linear-gradient(black, rgb(47, 15, 47));
-  background-size: cover;
-  min-height: 100%;
+  /**background-size: cover;**/
+  height: 100%;
 }
 
 h3 {
