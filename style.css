@@ -413,11 +413,8 @@ h3 {
   font-size: 20px;
   color: white;
   background-color: rgb(161, 46, 118);
-  padding: 10px 20px;
-}
-
-.code a {
-  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 20px;
 }
 
 #contact {
