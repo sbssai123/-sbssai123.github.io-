@@ -299,6 +299,10 @@ h3 {
   color: rgb(47, 15, 47);
 }
 
+.exp-description li {
+  padding: 3px 0px;
+}
+
 .exp-description b {
   color: white;
   font-weight: 400;
