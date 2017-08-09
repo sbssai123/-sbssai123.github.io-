@@ -12,6 +12,11 @@ body {
   background-color: black;
 }
 
+textarea {
+  width: 93%;
+  height: 150px;
+}
+
 /* Navbar design */
 .Navbar {
     position: fixed;
@@ -435,4 +440,8 @@ h3 {
   opacity: .37;
   width: 100%;
   min-height: 100%;
+}
+
+#send-button {
+
 }
