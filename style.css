@@ -376,6 +376,10 @@ h3 {
   width: 400px;
 }
 
+.project {
+  margin-bottom: 50px;
+}
+
 .project-title{
   font-weight: 400;
   margin-top: 40px;
@@ -383,16 +387,18 @@ h3 {
 }
 
 .project-img {
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-left:
   height: auto;
   width: auto;
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 490px;
+  max-height: 490px;
 }
 
 .project-description {
   font: 25px times;
   color: white;
+  margin-bottom: 20px;
 }
 
 #contact {
