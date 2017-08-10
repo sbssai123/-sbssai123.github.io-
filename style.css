@@ -12,10 +12,6 @@ body {
   background-color: black;
 }
 
-textarea {
-  width: 93%;
-  height: 150px;
-}
 
 /* Navbar design */
 .Navbar {
@@ -442,6 +438,24 @@ h3 {
   min-height: 100%;
 }
 
-#send-button {
+.contact-form {
+  padding: 70px;
+  background-color: rgba(32, 1, 35, .7);
+  margin-top: 60px;
+}
 
+#contact input {
+  background-color: black;
+  outline-color: rgb(161, 46, 118);
+  color: rgb(243, 172, 231);
+  width: 100%;
+  height: 40px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  color: rgb(243, 172, 231);
+  outline-color: rgb(161, 46, 118);
+  background-color: black;
 }
