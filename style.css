@@ -137,7 +137,7 @@ h3 {
 #headshot img{
   border-radius: 50%;
   top: 10%;
-  margin: 115px 100px 100px 90px;
+  margin: 115px 100px 100px 10%;
   border: 5px solid rgb(243, 172, 231);
 }
 
@@ -184,7 +184,6 @@ h3 {
   font-size: 70px;
   font-family: cursive;
   margin-top: 30px;
-  /**text-decoration: underline;**/
 }
 
 #skills h4 {
@@ -209,7 +208,7 @@ h3 {
 #language-charts p {
   text-align: center;
   margin-top: -28%;
-  margin-left: 38%;
+  margin-left: 39%;
   position: absolute;
   font-family: 'Cutive Mono';
   color: #ffffff;
@@ -352,6 +351,7 @@ h3 {
   background: rgb(32, 1, 35);
   background-size: cover;
   position: relative;
+  padding-bottom: 40px;
 }
 
 #projects h2 {
@@ -378,7 +378,7 @@ h3 {
 }
 
 .project {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .project-title{
