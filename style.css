@@ -468,11 +468,13 @@ textarea {
 }
 
 #send-button {
-  background-color: rgb(243, 172, 231);
-  font-weight: bolder;
-  font-size: 20px;
-  width: 10%;
-  height: 50px;
+  background-color: black;
+  margin-top: 7px;
+  color: rgb(243, 172, 231);
+  font-weight: bold;
+  font-size: 17px;
+  width: 8%;
+  height: 40px;
   position: absolute;
   right: 10%;
 }
