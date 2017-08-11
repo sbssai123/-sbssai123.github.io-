@@ -125,7 +125,6 @@ h2 {
   margin: 0 auto;
   background: black;
   background: linear-gradient(black, rgb(47, 15, 47));
-  /**background-size: cover;**/
   height: 100%;
 }
 
@@ -481,5 +480,14 @@ textarea {
 
 #footer {
   width: 100%;
-  height: 110px;
+  height: 75px;
+  background-color: black;
+  background-color: -webkit-linear-gradient(left, black, rgb(32, 1, 35));
+  background-color: -o-linear-gradient(right, black, rgb(32, 1, 35));
+  background-color: -moz-linear-gradient(right, black, rgb(32, 1, 35));
+  background: linear-gradient(to right,rgb(32, 1, 35), black, black, rgb(32, 1, 35));
+}
+
+.social-icon {
+  margin-top: 50px;
 }
