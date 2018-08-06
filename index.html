@@ -40,12 +40,12 @@
 
      <!-- Side Navigation Bar-->
      <div class="Navbar">
-         <ul class="Navbar">
-              <li ng-repeat="section in sections"> <a href="{{ '#'+ section.id }}">
-                      <div class="label"> {{ section.name }}</div>
-                  </a>
-              </li>
-       </ul>
+        <ul class="Navbar">
+          <li ng-repeat="section in sections"> <a href="{{ '#'+ section.id }}">
+                  <div class="label"> {{ section.name }}</div>
+              </a>
+          </li>
+        </ul>
       </div>
 
      <!-- Header component-->
@@ -59,6 +59,7 @@
               <a class="resume" href="img/Resume.pdf" target="_blank">
                 <h6>Resume</h6>
               </a>
+              <a id="down-arrow" href="#about"><img src="img/down_arrow.png"></a>
           </div>
        </div>
     </div>
