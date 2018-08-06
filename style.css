@@ -79,8 +79,8 @@ body {
 }
 
 .head-background{
-  background-image: url("img/dark-sky.jpg");
-  background-position: 100% top;
+  background-image: url("img/pink_computer.jpg");
+  background-position: 100% center;
   opacity: .95;
   height: 800px;
   width: 100%;
@@ -93,29 +93,71 @@ body {
 .header-text {
   position: absolute;
   text-align: center;
-  top: 27%;
-  width: 100%;
-  color: white;
+  top: 20%;
+  color: #00004d;
+  font-family: 'Playfair Display SC', serif;
   font-weight: bold;
 }
 
-h2 {
+.subhead-text {
   font-size: 30px;
-  color: white;
+  color: #00004d;
   padding: 0;
+  margin-top:0;
 }
 
 .header-text span.border {
-  font-size: 80px;
-  letter-spacing: 10px;
-  padding: 0;
+  font-size: 90px;
+  letter-spacing: 5px;
+  border: 10px double;
+  padding: 20px 150px 60px 150px;
 }
 
-#learn-more{
-  position: relative;
-  top: 90px;
+.vl {
+  border-left: 6px solid #00004d;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 112%;
+}
+
+.resume {
+  height: 75px;
+  width: 180px;
+  position: absolute;
+  border: 5px solid #00004d;
+  display: inline-block;
+  left: 44%;
+  top: 158%;
+}
+
+.resume h6{
   text-decoration: none;
-  padding: 0px;
+  text-align:center;
+  margin-top: 11%;
+  font-size: 30px;
+  color:#00004d;
+}
+
+.resume:hover{
+  text-decoration: none;
+  background-color:rgba(255, 255, 255, .5);
+  transform: scale(1.1);
+}
+
+@media (max-width:900px){
+  .header-text span.border {
+    border: none;
+    padding: 0;
+  }
+  .vl {
+    display: none;
+  }
+  .resume {
+    top: 110%;
+    left: 38%;
+  }
 }
 
 #about {
