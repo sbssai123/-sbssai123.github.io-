@@ -31,10 +31,12 @@ $(document).ready(function() {
   $(".subhead-text").hide();
   $(".vl").hide();
   $(".resume").hide();
+  $("#down-arrow img").hide();
   $(".border").fadeIn(2000, function(){
     $(".subhead-text").fadeIn(800);
     $(".vl").slideDown(1000, function(){
       $(".resume").fadeIn(1000);
+      $("#down-arrow img").fadeIn(1500);
     });
   });
 });
