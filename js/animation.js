@@ -77,14 +77,14 @@ $(document).ready(function($){
 
 // Handles fading in and out of navbar
 $(document).ready(function() {
-  $(".Navbar").hide(); //Hide the navigation bar first
-  $(document).on('scroll', function() {
-      if($(this).scrollTop()>=$('#about').position().top){
-        $('.Navbar').show(); //Show the navigation bar
-      } else {
-          $('.Navbar').hide(); //Else hide it
-        }
-  });
+  $(".Navbar").show(); //Hide the navigation bar first
+  // $(document).on('scroll', function() {
+  //     if($(this).scrollTop()>=$('#about').position().top){
+  //       $('.Navbar').show(); //Show the navigation bar
+  //     } else {
+  //         $('.Navbar').hide(); //Else hide it
+  //       }
+  // });
 });
 
 //Start chart animation when page gets to the skills section
