@@ -34,7 +34,7 @@ body {
     position: relative;
     padding-bottom: 20px;
     padding-left: 35%;
-    color: rgb(255,255,255);
+    color: #00004d;
 }
 
 .Navbar a{
@@ -44,19 +44,20 @@ body {
     text-indent: -9999px;
     border-radius: 80%;
     border: 2px solid;
-    border-color: rgb(255,255,255);
+    border-color: #00004d;
     text-decoration: none;
 }
 
 .Navbar a:hover{
     border-radius: 80%;
-    background-color: rgb(161, 46, 118);
+    background-color: rgb(146, 125, 138);
     text-decoration: none;
+    transform: scale(1.2);
 }
 
 .Navbar a.active{
     border-radius: 80%;
-    background-color: rgb(161, 46, 118);
+    background-color: rgb(146, 125, 138);
     text-decoration: none;
 }
 
@@ -67,7 +68,7 @@ body {
     width: 100%;
     text-align: right;
     font-size: 1em;
-    color: rgb(255,255,255);
+    color: #00004d;
     display: none;
 }
 
@@ -140,16 +141,6 @@ body {
   color:#00004d;
 }
 
-#down-arrow img {
-  max-width: 50px;
-  max-height: 50px;
-  position: absolute;
-  top: 230%;
-  left: 49%;
-  height: auto; 
-  width: auto;
-}
-
 .resume:hover{
   text-decoration: none;
   background-color:rgba(255, 255, 255, .5);
@@ -175,8 +166,7 @@ body {
   margin: 0;
   text-align: center;
   margin: 0 auto;
-  background: black;
-  background: linear-gradient(black, rgb(47, 15, 47));
+  background: whitesmoke;
   height: 100%;
 }
 
@@ -185,27 +175,25 @@ h3 {
   font-size: 50px;
 }
 
-#headshot img{
-  border-radius: 50%;
-  top: 10%;
-  margin: 115px 100px 100px 10%;
-  border: 5px solid rgb(243, 172, 231);
+#headshot img {
+  margin: 90px 100px 100px 10%;
+  border: 10px double rgb(161, 46, 118);
 }
 
 #about-heading {
-  font-family: cursive;
+  font-family: 'Playfair Display SC', serif;
   font-size: 60px;
   margin-top: 40px;
   margin-left: 40px;
   text-align: center;
-  color: rgb(243, 172, 231);
+  color: rgb(161, 46, 118);
 }
 
 #about-paragraph {
-  color: white;
-  margin-top: 15px;
+  color: #00004d;
+  margin-top: 25px;
   margin-left: 40px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
 
