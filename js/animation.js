@@ -13,17 +13,6 @@ $(document).ready(function(){
   });
 });
 
-// Fade down button in home screen when mouse hovers over
-$(document).ready(function() {
-  $("#learn-more img, #learn-more, #learn-more h4, #resume h4").hover(
-    function() {
-      $(this).stop().animate({"opacity": .65});
-    },
-    function() {
-      $(this).stop().animate({"opacity": 1});
-    }
-  )
-});
 
 // Fade in header text
 $(document).ready(function() {
@@ -77,14 +66,7 @@ $(document).ready(function($){
 
 // Handles fading in and out of navbar
 $(document).ready(function() {
-  $(".Navbar").show(); //Hide the navigation bar first
-  // $(document).on('scroll', function() {
-  //     if($(this).scrollTop()>=$('#about').position().top){
-  //       $('.Navbar').show(); //Show the navigation bar
-  //     } else {
-  //         $('.Navbar').hide(); //Else hide it
-  //       }
-  // });
+  $(".Navbar").show();
 });
 
 //Start chart animation when page gets to the skills section
