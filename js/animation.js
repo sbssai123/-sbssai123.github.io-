@@ -13,30 +13,17 @@ $(document).ready(function(){
   });
 });
 
-// Fade down button in home screen when mouse hovers over
-$(document).ready(function() {
-  $("#learn-more img, #learn-more, #learn-more h4, #resume h4").hover(
-    function() {
-      $(this).stop().animate({"opacity": .65});
-    },
-    function() {
-      $(this).stop().animate({"opacity": 1});
-    }
-  )
-});
 
-// Fade in header text
+// animation for header section
 $(document).ready(function() {
   $(".border").hide();
   $(".subhead-text").hide();
   $(".vl").hide();
   $(".resume").hide();
-  $("#down-arrow img").hide();
   $(".border").fadeIn(2000, function(){
     $(".subhead-text").fadeIn(800);
     $(".vl").slideDown(1000, function(){
       $(".resume").fadeIn(1000);
-      $("#down-arrow img").fadeIn(1500);
     });
   });
 });
@@ -77,14 +64,7 @@ $(document).ready(function($){
 
 // Handles fading in and out of navbar
 $(document).ready(function() {
-  $(".Navbar").show(); //Hide the navigation bar first
-  // $(document).on('scroll', function() {
-  //     if($(this).scrollTop()>=$('#about').position().top){
-  //       $('.Navbar').show(); //Show the navigation bar
-  //     } else {
-  //         $('.Navbar').hide(); //Else hide it
-  //       }
-  // });
+  $(".Navbar").show();
 });
 
 //Start chart animation when page gets to the skills section
