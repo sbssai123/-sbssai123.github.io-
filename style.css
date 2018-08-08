@@ -183,7 +183,7 @@ h3 {
 #about-heading {
   font-family: 'Playfair Display SC', serif;
   font-size: 60px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 40px;
   text-align: center;
   color: rgb(161, 46, 118);
@@ -191,10 +191,9 @@ h3 {
 
 #about-paragraph {
   color: #00004d;
-  margin-top: 25px;
-  margin-left: 40px;
+  margin: 25px 0px 40px 50px;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 #skills{
