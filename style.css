@@ -34,7 +34,7 @@ body {
     position: relative;
     padding-bottom: 20px;
     padding-left: 35%;
-    color: rgb(255,255,255);
+    color: #00004d;
 }
 
 .Navbar a{
@@ -44,19 +44,20 @@ body {
     text-indent: -9999px;
     border-radius: 80%;
     border: 2px solid;
-    border-color: rgb(255,255,255);
+    border-color: #00004d;
     text-decoration: none;
 }
 
 .Navbar a:hover{
     border-radius: 80%;
-    background-color: rgb(161, 46, 118);
+    background-color: rgb(146, 125, 138);
     text-decoration: none;
+    transform: scale(1.2);
 }
 
 .Navbar a.active{
     border-radius: 80%;
-    background-color: rgb(161, 46, 118);
+    background-color: rgb(146, 125, 138);
     text-decoration: none;
 }
 
@@ -67,7 +68,7 @@ body {
     width: 100%;
     text-align: right;
     font-size: 1em;
-    color: rgb(255,255,255);
+    color: #00004d;
     display: none;
 }
 
@@ -79,8 +80,8 @@ body {
 }
 
 .head-background{
-  background-image: url("img/dark-sky.jpg");
-  background-position: 100% top;
+  background-image: url("img/pink_computer.jpg");
+  background-position: 100% center;
   opacity: .95;
   height: 800px;
   width: 100%;
@@ -93,29 +94,71 @@ body {
 .header-text {
   position: absolute;
   text-align: center;
-  top: 27%;
-  width: 100%;
-  color: white;
+  top: 20%;
+  color: #00004d;
+  font-family: 'Playfair Display SC', serif;
   font-weight: bold;
 }
 
-h2 {
+.subhead-text {
   font-size: 30px;
-  color: white;
+  color: #00004d;
   padding: 0;
+  margin-top:0;
 }
 
 .header-text span.border {
-  font-size: 80px;
-  letter-spacing: 10px;
-  padding: 0;
+  font-size: 90px;
+  letter-spacing: 5px;
+  border: 10px double;
+  padding: 20px 150px 60px 150px;
 }
 
-#learn-more{
-  position: relative;
-  top: 90px;
+.vl {
+  border-left: 6px solid #00004d;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 112%;
+}
+
+.resume {
+  height: 75px;
+  width: 180px;
+  position: absolute;
+  border: 5px solid #00004d;
+  display: inline-block;
+  left: 44%;
+  top: 158%;
+}
+
+.resume h6{
   text-decoration: none;
-  padding: 0px;
+  text-align:center;
+  margin-top: 11%;
+  font-size: 30px;
+  color:#00004d;
+}
+
+.resume:hover{
+  text-decoration: none;
+  background-color:rgba(255, 255, 255, .5);
+  transform: scale(1.1);
+}
+
+@media (max-width:900px){
+  .header-text span.border {
+    border: none;
+    padding: 0;
+  }
+  .vl {
+    display: none;
+  }
+  .resume {
+    top: 110%;
+    left: 38%;
+  }
 }
 
 #about {
@@ -123,8 +166,7 @@ h2 {
   margin: 0;
   text-align: center;
   margin: 0 auto;
-  background: black;
-  background: linear-gradient(black, rgb(47, 15, 47));
+  background: whitesmoke;
   height: 100%;
 }
 
@@ -133,288 +175,37 @@ h3 {
   font-size: 50px;
 }
 
-#headshot img{
-  border-radius: 50%;
-  top: 10%;
-  margin: 115px 100px 100px 10%;
-  border: 5px solid rgb(243, 172, 231);
+#headshot img {
+  margin: 120px 100px 100px 10%;
+  border: 10px double rgb(161, 46, 118);
 }
 
 #about-heading {
-  font-family: cursive;
+  font-family: 'Playfair Display SC', serif;
   font-size: 60px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 40px;
   text-align: center;
-  color: rgb(243, 172, 231);
+  color: rgb(161, 46, 118);
 }
 
 #about-paragraph {
-  color: white;
-  margin-top: 15px;
-  margin-left: 40px;
-  font-size: 25px;
-  text-align: center;
-}
-
-#skills{
-  position: relative;
-  z-index: 1;
-}
-
-.container-fluid .skill-background {
-  background-image: url("img/workplace.jpg");
-  background-position: 100% top;
-  opacity: .6;
-  width: 100%;
-  min-height: 100%;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
+  color: #00004d;
+  margin: 25px 0px 40px 50px;
+  font-size: 20px;
+  text-align: left;
 }
 
 .section-heading {
   text-align: center;
-  font-size: 70px;
-  font-family: cursive;
+  font-size: 65px;
+  font-family: 'Playfair Display SC', serif;
   margin-top: 30px;
-}
-
-#skills h4 {
-  text-align: center;
-  margin: 0px;
-  font-size: 35px;
-  font-weight: bold;
-  color: white;
-   /**-webkit-text-stroke: 2.2px rgb(161, 46, 118)**/;
-}
-
-
-#language-charts h6 {
-  text-align: center;
-  color: #ffffff;
-  font-size: 25px;
-  font-family: 'Cutive Mono';
-  margin-top: 0px;
-  margin-left: 90px;
-}
-
-#language-charts p {
-  text-align: center;
-  margin-top: -28%;
-  margin-left: 39%;
-  position: absolute;
-  font-family: 'Cutive Mono';
-  color: #ffffff;
-  font-size: 20px;
-}
-
-.container {
-  position: relative;
-  width: 160%;
-  margin: 15px auto;
-}
-
-.tech-list {
-  font-size: 23px;
-  font-family: 'Cutive Mono';
-  color: #ffffff;
-  text-align: center;
-  list-style-type: none;
+  color: rgb(161, 46, 118);
 }
 
 .spacing {
   margin: 60px;
-}
-
-#experience {
-  text-align: center;
-  margin: 0 auto;
-  /**background: black;**/
-  /**background: linear-gradient(black, rgb(47, 15, 47))**/;
-  background: linear-gradient( rgba(0, 0, 0, 2), rgba(0, 0, 0, .4)), url('img/bridge.jpg');
-  background-size: cover;
-  min-height: 100%;
-  height: auto;
-}
-
-.rectangle {
-  margin-top: 50px;
-  width: 75%;
-  padding: 20px;
-  height: 100%;
-  background-color: rgba(243, 172, 231, .7);
-  border: 5px solid rgb(161, 46, 118);
-  margin-bottom: 30px;
-}
-
-
-#experience img {
-  margin-top: 85px;
-  border-radius: 50%;
-  border: 5px solid rgb(161, 46, 118);
-}
-
-#experience h3 {
-  font-size: 35px;
-  font-weight: bold;
-  text-align: left;
-  color: rgb(47, 15, 47);
-  margin-top: -.5px;
-}
-
-#experience h3 b {
-  color: rgb(47, 15, 47);
-  font-weight: 400;
-  font: 30px Serif;
-}
-
-#experience #date {
-  text-align: right;
-  position: relative;
-  color: rgb(47, 15, 47);
-  font-weight: lighter;
-  font: 20px Serif;
-  margin-top: 10px;
-}
-
-#experience h5 {
-  text-align: left;
-  margin-top: -15px;
-  margin-left: 14px;
-  font: italic 25px Serif;
-  color: white;
-}
-
-.exp-description {
-  font: 20px Times;
-  text-align: left;
-  margin: -8px 5px 0px 10px;
-  color: rgb(47, 15, 47);
-}
-
-.exp-description li {
-  padding: 3px 0px;
-}
-
-.exp-description b {
-  color: white;
-  font-weight: 400;
-}
-
-
-#resume {
-  position: relative;
-  z-index: 1;
-}
-
-.container-fluid .resume-background{
-  background-image: url("img/purple-stripes.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: .37;
-  width: 100%;
-  min-height: 100%;
-  height: auto;
-}
-
-#resume h4 {
-  margin-top: 70px;
-  margin-bottom: 50px;
-  color: white;
-  font-family: 'Tangerine', serif;
-  font-size: 70px;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 4px 4px 4px #000;
-}
-
-#resume a {
-  text-decoration: none;
-}
-
-#projects {
-  min-height: 100%;
-  height: auto;
-  background: rgb(32, 1, 35);
-  background-size: cover;
-  position: relative;
-  padding-bottom: 40px;
-}
-
-#projects h2 {
-  margin-top: 65px;
-  text-align: center;
-}
-
-#projects h4 {
-  font-size: 40px;
-  margin-top: 3px;
-  text-align: center;
-  font-family: 'Cutive Mono';
-  font-weight: 400;
-  color: rgb(243, 172, 231);
-}
-
-#projects #underline {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 23px;
-  height: 5px;
-  background-color: white;
-  width: 400px;
-}
-
-.project {
-  margin-bottom: 100px;
-}
-
-.project-title{
-  font-weight: 400;
-  margin-top: 40px;
-  font-family: times;
-}
-
-.project-img {
-  margin-top: 40px;
-  height: auto;
-  width: auto;
-  max-width: 500px;
-  max-height: 500px;
-}
-
-.music-img {
-  margin-top: 40px;
-  height: auto;
-  width: auto;
-  max-width: 500px;
-  max-height: 600px;
-}
-
-.project-description {
-  font: 25px times;
-  color: white;
-  margin-bottom: 30px;
-}
-
-.code {
-  margin-right: 30px;
-  font-size: 20px;
-  color: white;
-  background-color: rgb(161, 46, 118);
-  padding: 12px 22px;
-  border-radius: 20px;
 }
 
 #contact {
@@ -423,7 +214,7 @@ h3 {
 }
 
 .container-fluid .contact-background {
-  background-image: url("img/purple-flower.jpg");
+  background-image: url(img/white-bricks.jpg);
   background-attachment: fixed;
   background-size: cover;
   position: absolute;
@@ -432,60 +223,35 @@ h3 {
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: .37;
   width: 100%;
   min-height: 100%;
 }
 
-#contact h4 {
+.contact-header {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-left: 40px;
   text-align: center;
-  color: rgb(243, 172, 231);
-  font-size: 30px;
-  font-family: 'Serif';
+  color:#00004d;
 }
 
-.contact-form {
-  padding: 70px;
-  background-color: rgba(32, 1, 35, .7);
-  margin-top: 20px;
+#contact-pic img {
+  border: 10px double rgb(161, 46, 118);
+  margin-top: 7%;
+  margin-left: 7%;
 }
 
-#contact input {
-  background-color: black;
-  outline-color: rgb(161, 46, 118);
-  color: rgb(243, 172, 231);
-  width: 100%;
-  height: 40px;
-}
-
-textarea {
-  width: 100%;
-  height: 150px;
-  color: rgb(243, 172, 231);
-  outline-color: rgb(161, 46, 118);
-  background-color: black;
-}
-
-#send-button {
-  background-color: black;
-  margin-top: 7px;
-  color: rgb(243, 172, 231);
-  font-weight: bold;
-  font-size: 17px;
-  width: 8%;
-  height: 40px;
-  position: absolute;
-  right: 10%;
+#contact-info {
+  background-color: #dac4c5;
+  margin-top: 7%;
 }
 
 #footer {
   width: 100%;
   height: 75px;
-  background-color: black;
-  background-color: -webkit-linear-gradient(left, black, rgb(47, 15, 47));
-  background-color: -o-linear-gradient(right, black, rgb(47, 15, 47));
-  background-color: -moz-linear-gradient(right, black, rgb(47, 15, 47));
-  background: linear-gradient(to right,rgb(47, 15, 47), black, black, rgb(47, 15, 47));
+  background-color: #00004d;
 }
 
 .social-icon {

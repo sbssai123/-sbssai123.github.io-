@@ -13,18 +13,20 @@ $(document).ready(function(){
   });
 });
 
-// Fade down button in home screen when mouse hovers over
-$(document).ready(function() {
-  $("#learn-more img, #learn-more, #learn-more h4, #resume h4").hover(
-    function() {
-      $(this).stop().animate({"opacity": .65});
-    },
-    function() {
-      $(this).stop().animate({"opacity": 1});
-    }
-  )
-});
 
+// animation for header section
+$(document).ready(function() {
+  $(".border").hide();
+  $(".subhead-text").hide();
+  $(".vl").hide();
+  $(".resume").hide();
+  $(".border").fadeIn(2000, function(){
+    $(".subhead-text").fadeIn(800);
+    $(".vl").slideDown(1000, function(){
+      $(".resume").fadeIn(1000);
+    });
+  });
+});
 
 
 // hover and transition effects for vertical dot nav bar
@@ -62,28 +64,8 @@ $(document).ready(function($){
 
 // Handles fading in and out of navbar
 $(document).ready(function() {
-  $(".Navbar").hide(); //Hide the navigation bar first
-  $(document).on('scroll', function() {
-      if($(this).scrollTop()>=$('#about').position().top){
-        $('.Navbar').show(); //Show the navigation bar
-      } else {
-          $('.Navbar').hide(); //Else hide it
-        }
-  });
+  $(".Navbar").show();
 });
-/**
-$(document).ready(function() {
-  $(".rectangle").hide(); //Hide componenets first
-  $('#experience img').hide();
-  $(window).scroll(function() {
-      if($(this).scrollTop()>=$('#experience').position().top){
-        $('#experience img').fadeIn(300);
-        $('.r-left').show("slide", { direction: "left" }, 1000);
-        $('.r-right').delay(500).show("slide", { direction: "right" }, 1000);
-      }
-  });
-});
-**/
 
 //Start chart animation when page gets to the skills section
 // for the first time
@@ -132,3 +114,5 @@ function start_count(idelement, p1, p2){
    }
  });
 }
+
+// Timeline ania
