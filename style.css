@@ -176,7 +176,7 @@ h3 {
 }
 
 #headshot img {
-  margin: 90px 100px 100px 10%;
+  margin: 120px 100px 100px 10%;
   border: 10px double rgb(161, 46, 118);
 }
 
@@ -196,27 +196,6 @@ h3 {
   text-align: left;
 }
 
-#skills{
-  position: relative;
-  z-index: 1;
-}
-
-.container-fluid .skill-background {
-  background-image: url("img/workplace.jpg");
-  background-position: 100% top;
-  opacity: .6;
-  width: 100%;
-  min-height: 100%;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-}
-
 .section-heading {
   text-align: center;
   font-size: 65px;
@@ -225,298 +204,8 @@ h3 {
   color: rgb(161, 46, 118);
 }
 
-#skills h4 {
-  text-align: center;
-  margin: 0px;
-  font-size: 35px;
-  font-weight: bold;
-  color: white;
-   /**-webkit-text-stroke: 2.2px rgb(161, 46, 118)**/;
-}
-
-
-#language-charts h6 {
-  text-align: center;
-  color: #ffffff;
-  font-size: 25px;
-  font-family: 'Cutive Mono';
-  margin-top: 0px;
-  margin-left: 90px;
-}
-
-#language-charts p {
-  text-align: center;
-  margin-top: -28%;
-  margin-left: 39%;
-  position: absolute;
-  font-family: 'Cutive Mono';
-  color: #ffffff;
-  font-size: 20px;
-}
-
-.container {
-  position: relative;
-  width: 160%;
-  margin: 15px auto;
-}
-
-.tech-list {
-  font-size: 23px;
-  font-family: 'Cutive Mono';
-  color: #ffffff;
-  text-align: center;
-  list-style-type: none;
-}
-
 .spacing {
   margin: 60px;
-}
-
-#experience {
-  text-align: center;
-  margin: 0 auto;
-  /**background: black;**/
-  /**background: linear-gradient(black, rgb(47, 15, 47))**/
-  background: linear-gradient( rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url('img/white-desk.jpg');
-  background-size: cover;
-  background-position: 100% center;
-  min-height: 100%;
-  height: auto;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: rgb(161, 46, 118);
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-/* Container around content */
-.blob {
-  padding: 10px 40px;
-  position: relative;
-  background-color: auto;
-  width: 50%;
-}
-
-/* The circles on the timeline */
-.blob::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #f4a946;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-  left: 0;
-}
-
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid #00004d;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #00004d;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid #00004d;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #00004d transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: #d9c3c4;
-  position: relative;
-  border-radius: 6px;
-  border: 5px solid #00004d;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-/* Place the timelime to the left */
-  .timeline::after {
-    left: 31px;
-  }
-
-/* Full-width containers */
-  .blob {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-
-/* Make sure that all arrows are pointing leftwards */
-  .blob::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-
-/* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-    left: 15px;
-  }
-
-/* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
-  }
-}
-
-#resume {
-  position: relative;
-  z-index: 1;
-}
-
-.container-fluid .resume-background{
-  background-image: url("img/purple-stripes.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: .37;
-  width: 100%;
-  min-height: 100%;
-  height: auto;
-}
-
-#resume h4 {
-  margin-top: 70px;
-  margin-bottom: 50px;
-  color: white;
-  font-family: 'Tangerine', serif;
-  font-size: 70px;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 4px 4px 4px #000;
-}
-
-#resume a {
-  text-decoration: none;
-}
-
-#projects {
-  min-height: 100%;
-  height: auto;
-  background: rgb(32, 1, 35);
-  background-size: cover;
-  position: relative;
-  padding-bottom: 40px;
-}
-
-#projects h2 {
-  margin-top: 65px;
-  text-align: center;
-}
-
-#projects h4 {
-  font-size: 40px;
-  margin-top: 3px;
-  text-align: center;
-  font-family: 'Cutive Mono';
-  font-weight: 400;
-  color: rgb(243, 172, 231);
-}
-
-#projects #underline {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 23px;
-  height: 5px;
-  background-color: white;
-  width: 400px;
-}
-
-.project {
-  margin-bottom: 100px;
-}
-
-.project-title{
-  font-weight: 400;
-  margin-top: 40px;
-  font-family: times;
-}
-
-.project-img {
-  margin-top: 40px;
-  height: auto;
-  width: auto;
-  max-width: 500px;
-  max-height: 500px;
-}
-
-.music-img {
-  margin-top: 40px;
-  height: auto;
-  width: auto;
-  max-width: 500px;
-  max-height: 600px;
-}
-
-.project-description {
-  font: 25px times;
-  color: white;
-  margin-bottom: 30px;
-}
-
-.code {
-  margin-right: 30px;
-  font-size: 20px;
-  color: white;
-  background-color: rgb(161, 46, 118);
-  padding: 12px 22px;
-  border-radius: 20px;
 }
 
 #contact {
@@ -525,7 +214,7 @@ h3 {
 }
 
 .container-fluid .contact-background {
-  background-image: url("img/purple-flower.jpg");
+  background-image: url(img/white-bricks.jpg);
   background-attachment: fixed;
   background-size: cover;
   position: absolute;
@@ -534,60 +223,35 @@ h3 {
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: .37;
   width: 100%;
   min-height: 100%;
 }
 
-#contact h4 {
+.contact-header {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-left: 40px;
   text-align: center;
-  color: rgb(243, 172, 231);
-  font-size: 30px;
-  font-family: 'Serif';
+  color:#00004d;
 }
 
-.contact-form {
-  padding: 70px;
-  background-color: rgba(32, 1, 35, .7);
-  margin-top: 20px;
+#contact-pic img {
+  border: 10px double rgb(161, 46, 118);
+  margin-top: 7%;
+  margin-left: 7%;
 }
 
-#contact input {
-  background-color: black;
-  outline-color: rgb(161, 46, 118);
-  color: rgb(243, 172, 231);
-  width: 100%;
-  height: 40px;
-}
-
-textarea {
-  width: 100%;
-  height: 150px;
-  color: rgb(243, 172, 231);
-  outline-color: rgb(161, 46, 118);
-  background-color: black;
-}
-
-#send-button {
-  background-color: black;
-  margin-top: 7px;
-  color: rgb(243, 172, 231);
-  font-weight: bold;
-  font-size: 17px;
-  width: 8%;
-  height: 40px;
-  position: absolute;
-  right: 10%;
+#contact-info {
+  background-color: #dac4c5;
+  margin-top: 7%;
 }
 
 #footer {
   width: 100%;
   height: 75px;
-  background-color: black;
-  background-color: -webkit-linear-gradient(left, black, rgb(47, 15, 47));
-  background-color: -o-linear-gradient(right, black, rgb(47, 15, 47));
-  background-color: -moz-linear-gradient(right, black, rgb(47, 15, 47));
-  background: linear-gradient(to right,rgb(47, 15, 47), black, black, rgb(47, 15, 47));
+  background-color: #00004d;
 }
 
 .social-icon {
