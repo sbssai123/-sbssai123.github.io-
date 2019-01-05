@@ -214,10 +214,11 @@ h3 {
 }
 
 .container-fluid .contact-background {
-  background-image: url(img/white-bricks.jpg);
+  background-color: whitesmoke;
   background-attachment: fixed;
   background-size: cover;
   position: absolute;
+  opacity: 95%;
   z-index: -1;
   top: 0;
   bottom: 0;
