@@ -1,133 +1,80 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Sreeya Sai | Website</title>
-  <link rel="icon" href="img/webpage-icon.png">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!--chart.js library-->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
-  <link rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-  </script>
-  <script
-  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-  crossorigin="anonymous"></script>
-  <!--Bootstrap-->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-  </script>
-  <!--Font-->
-  <link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'>
-  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" >
-  <!-- Angular.js -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-  <!-- Modules -->
-  <script src="js/app.js"></script>
-  <!-- Controllers -->
-  <script src="js/MainController.js"></script>
-  <!-- Directive -->
-  <script src="js/directives/chartInfo.js"></script>
-  <script src="js/directives/techInfo.js"></script>
+  <head>
+    <title>Sreeya Sai | Website</title>
+    <link rel="icon" href="img/webpage-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--chart.js library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <script
+    src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+    integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+    crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Angular.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+    <!-- Controllers -->
+    <script src="js/MainController.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
-  <script type="text/javascript" src="js/animation.js"></script>
-</head>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 
-   <body ng-app="PersonalWebsite" ng-controller="MainController">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="js/animation.js"></script>
+  </head>
 
-     <!-- Side Navigation Bar-->
-     <div class="Navbar">
-        <ul class="Navbar">
-          <li ng-repeat="section in sections"> <a href="{{ '#'+ section.id }}">
-                  <div class="label"> {{ section.name }}</div>
-              </a>
-          </li>
+    <body ng-app="PersonalWebsite" ng-controller="MainController">
+
+      <!-- Side Navigation Bar-->
+      <div class="navbar">
+        <ul class="navbar">
+          <li><a class="label btn btn-primary">Resume</a></li>
+          <li><a class="label">Projects</a></li>
+          <li><a class="label">About Me</a></li>
         </ul>
       </div>
 
-     <!-- Header component-->
-    <div class="container-fluid" id="home">
-       <div class= "head-background"></div>
-       <div class="row">
-          <div class="col-sm-12 header-text">
-              <span class="border">Sreeya Sai</span>
-              <h2 class="subhead-text">~ Software Engineer. Social Entrepreneur ~</h2>
-              <div class="vl"></div>
-              <a class="resume" href="img/Resume.pdf" target="_blank">
-                <h6>Resume</h6>
-              </a>
-          </div>
-       </div>
-    </div>
-
-     <!-- About me section -->
-     <div class="container-fluid" id="about">
-      <div class="row">
-        <div class="col-sm-7">
-          <h3 id="about-heading">Hi, I'm Sreeya.</h3>
-          <p id="about-paragraph">
-            I am a senior at Northeastern University studying computer science with an interest in conversational AI, venture capital, and entrepreneurship.
-            Through Northeastern's co-op program, 
-            I have received one year of industry experience. My first software engineering co-op was 
-            at IBM Research on the Healthcare Effectiveness Research Team working on understanding 
-            and analyzing physician-patient conversations. 
-            After woking at a large corporate organization, I wanted to explore Boston's tech start-up 
-            scene so I worked at Catalant Technologies for my second co-op.
-            <br><br>
-            I am also the Chief Business Officer for <a href="https://boston.techtogether.io/" target="_blank">
-            <b style="color:rgb(161, 46, 118);">TechTogether (formerly SheHacks)</b></a>, 
-            a non-profit organization focused on equipping young women with the tools and resources 
-            they need to explore the tech industry.
-            Last year, our organization held SheHacks Boston, one of the largest all-female and non-binary hackathons
-            in the world where I served as the Director of Partnerships and a founding team member. I am also a Venture Fellow at 
-            <a href="http://www.roughdraft.vc/" target="_blank"><b style="color:rgb(161, 46, 118);">Rough Draft Ventures</b></a>, a student VC firm supported by General Catalyst, and make investment decisions 
-            to back student founded start-ups.
-            <br><br>
-            After graduating in May 2019, I will be working full-time at Drift in Boston as a Software Engineer.
-          </p>
+      <!-- Header component-->
+      <div class="container-fluid" id="home">
+          <div class="row">
+            <div class="col-sm-6">
+              <h1 class="header-text"> HI, I'M SREEYA</h1>
+              <h3 class="subheader-text">Software Engineer</h3>
+            </div>
+            <div class="col-sm-6">
+              <img class="profile-pic" src="img/profile.png">
+            </div>
         </div>
-        <div class="col-sm-3" id="headshot">
-            <img src="img/me.jpg" alt="headshot" height="140%" width="115%">
+      </div>
+
+      <!-- About me section -->
+      <div class="container-fluid" id="about">
+        <div class="row">
+          <div class="col-sm-12">
           </div>
-        <div class="col-sm-1"></div>
+        </div>
       </div>
-     </div>
 
- <!--Contact Section -->
- <div class="container-fluid" id="contact">
-   <div class="contact-background"></div>
-   <h2 class="contact-header">Let's Get Connected!</h2>
-   <div class="row">
-      <div class="col-sm-6" id="contact-pic">
-        <img src="img/brooklyn.jpg" height="400px" width="auto">
-      </div>
-      <div class="col-sm-5" id="contact-info">
-        <h4><b>Interested in empowering the next generation of women and non-binary technologists? </b><a href="mailto:sreeya@techtogether.io" target="_blank">sreeya@techtogether.io</a></h4>
-        <h4><b>Student entreprenur intersted in Rough Draft Ventures? </b><a href="mailto:sreeya@roughdraft.vc" target="_blank">sreeya@roughdraft.vc</a></h4>
-        <h4><b>School Email:</b> <a href="mailto:sai.s@husky.neu.edu" target="_blank">sai.s@husky.neu.edu</a></h4>
-        <h4><b>LinkedIn: </b><a href="https://www.linkedin.com/in/sreeya-sai/" target="_blank">https://www.linkedin.com/in/sreeya-sai/</a></h4>
-        <h4><b>Twitter: </b><a href="https://twitter.com/sreeyasai" target="_blank">https://twitter.com/sreeyasai</a></h4>
-        <h4><b>Github: </b><a href="https://github.com/sbssai123" target="_blank">https://github.com/sbssai123</a></h4>
-        <h4><b>Medium Blog: </b><a href="https://medium.com/@sreeyasai" target="_blank">https://medium.com/@sreeyasai</a></h4>
-      </div>
-      <div class="col-sm-1"></div>
-   </div>
- <div class="row spacing" style="margin: 27px"></div>
- </div>
-
- <!--Footer Section -->
- <div class="container-fluid" id="footer">
-   <div class="row">
-     <div style="margin-top:20px; margin-left:40%;">
-       <a class="social-icon" href="https://www.linkedin.com/in/sreeya-sai/" target="_blank"> <img src="img/linkedin.png"></a>
-       <a class="social-icon" href="https://github.com/sbssai123" target="_blank"> <img src="img/github.png"></a>
-       <a class="social-icon" href="mailto:sai.s@husky.neu.edu"> <img src="img/email.png"></a>
+  <!--Footer Section -->
+  <div class="container-fluid" id="footer">
+    <div class="row">
+      <div style="margin-top:20px; margin-left:40%;">
+        <a class="social-icon" href="https://www.linkedin.com/in/sreeya-sai/" target="_blank"> <img src="img/linkedin.png"></a>
+        <a class="social-icon" href="https://github.com/sbssai123" target="_blank"> <img src="img/github.png"></a>
+        <a class="social-icon" href="mailto:sai.s@husky.neu.edu"> <img src="img/email.png"></a>
+        </div>
       </div>
     </div>
-   </div>
-   </body>
+  </body>
 
-   </html>
+</html>

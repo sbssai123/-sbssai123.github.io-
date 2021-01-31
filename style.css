@@ -9,67 +9,37 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: black;
+  background-color: #EDC7B7;
 }
-
 
 /* Navbar design */
-.Navbar {
-    position: fixed;
-    display: none;
-    top: 43%;
-    left: 90%;
-    width: 50px;
-    z-index: 9999;
-    list-style-type: none;
-}
-
-.Navbar ul {
-    position: relative;
-    padding: 3px;
-    padding-left: 35%;
-}
-
-.Navbar ul li{
-    position: relative;
-    padding-bottom: 20px;
-    padding-left: 35%;
-    color: #00004d;
-}
-
-.Navbar a{
-    display: block;
-    width: 15px;
-    height: 15px;
-    text-indent: -9999px;
-    border-radius: 80%;
-    border: 2px solid;
-    border-color: #00004d;
-    text-decoration: none;
-}
-
-.Navbar a:hover{
-    border-radius: 80%;
-    background-color: rgb(146, 125, 138);
-    text-decoration: none;
-    transform: scale(1.2);
-}
-
-.Navbar a.active{
-    border-radius: 80%;
-    background-color: rgb(146, 125, 138);
-    text-decoration: none;
+.navbar {
+    margin-top: 1.5%;
+    margin-right: 4%
 }
 
 .label {
-    position: relative;
-    top: -60%;
-    left: -200%;
-    width: 100%;
-    text-align: right;
-    font-size: 1em;
-    color: #00004d;
-    display: none;
+  font-size: 20px;
+  color: #123C69;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+li {
+  float: right;
+  display: inline;
+  padding-right: 4%;
+}
+
+.btn-primary {
+  background: #C5CBE3;
+  border-radius: 10px;
+  border-color: #C5CBE3;
+  padding: 10px 25px 10px 25px;
 }
 
 #home {
@@ -77,88 +47,41 @@ body {
   margin: 0;
   text-align: center;
   margin: 0 auto;
-}
-
-.head-background{
-  background-image: url("img/pink_computer.jpg");
+  background-color: #EDC7B7;
   background-position: 100% center;
   opacity: .95;
-  height: 800px;
+  height: 560px;
   width: 100%;
   min-height: 100%;
   background-size: cover;
-  position: relative;
-  background-attachment: fixed;
 }
 
 .header-text {
-  position: absolute;
+  color: #AC3B61;
+  font-style: normal;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+  top: 200px;
+  margin-top: 24%;
+  margin-left: 12%;
+}
+
+.subheader-text {
+  font-size: 37px;
+  color:rgba(142, 128, 133, 0.82);
+  font-family: 'Roboto', sans-serif;
   text-align: center;
-  top: 20%;
-  color: #00004d;
-  font-family: 'Playfair Display SC', serif;
-  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 10%;
 }
 
-.subhead-text {
-  font-size: 30px;
-  color: #00004d;
-  padding: 0;
-  margin-top:0;
-}
-
-.header-text span.border {
-  font-size: 90px;
-  letter-spacing: 5px;
-  border: 10px double;
-  padding: 20px 150px 60px 150px;
-}
-
-.vl {
-  border-left: 6px solid #00004d;
-  height: 80px;
-  position: absolute;
-  left: 50%;
-  margin-left: -3px;
-  top: 112%;
-}
-
-.resume {
-  height: 75px;
-  width: 180px;
-  position: absolute;
-  border: 5px solid #00004d;
-  display: inline-block;
-  left: 44%;
-  top: 158%;
-}
-
-.resume h6{
-  text-decoration: none;
-  text-align:center;
-  margin-top: 11%;
-  font-size: 30px;
-  color:#00004d;
-}
-
-.resume:hover{
-  text-decoration: none;
-  background-color:rgba(255, 255, 255, .5);
-  transform: scale(1.1);
-}
-
-@media (max-width:900px){
-  .header-text span.border {
-    border: none;
-    padding: 0;
-  }
-  .vl {
-    display: none;
-  }
-  .resume {
-    top: 110%;
-    left: 38%;
-  }
+.profile-pic {
+  margin-top: 1%;
+  margin-right: 15%;
+  height: 555px;
+  width: auto;
+  opacity: 0.90;
 }
 
 #about {
@@ -166,18 +89,9 @@ body {
   margin: 0;
   text-align: center;
   margin: 0 auto;
-  background: whitesmoke;
-  height: 100%;
-}
-
-h3 {
-  color: white;
-  font-size: 50px;
-}
-
-#headshot img {
-  margin: 120px 100px 100px 10%;
-  border: 10px double rgb(161, 46, 118);
+  background: #FFFBFB;
+  height: 400px;
+  min-height: 100%;
 }
 
 #about-heading {
@@ -196,57 +110,8 @@ h3 {
   text-align: left;
 }
 
-.section-heading {
-  text-align: center;
-  font-size: 65px;
-  font-family: 'Playfair Display SC', serif;
-  margin-top: 30px;
-  color: rgb(161, 46, 118);
-}
-
 .spacing {
   margin: 60px;
-}
-
-#contact {
-  position: relative;
-  z-index: 1;
-}
-
-.container-fluid .contact-background {
-  background-color: whitesmoke;
-  background-attachment: fixed;
-  background-size: cover;
-  position: absolute;
-  opacity: 95%;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  min-height: 100%;
-}
-
-.contact-header {
-  font-family: 'Playfair Display SC', serif;
-  font-size: 60px;
-  font-weight: 700;
-  margin-top: 30px;
-  margin-left: 40px;
-  text-align: center;
-  color:#00004d;
-}
-
-#contact-pic img {
-  border: 10px double rgb(161, 46, 118);
-  margin-top: 7%;
-  margin-left: 7%;
-}
-
-#contact-info {
-  background-color: #dac4c5;
-  margin-top: 7%;
 }
 
 #footer {
