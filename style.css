@@ -15,11 +15,11 @@ body {
 /* Navbar design */
 .navbar {
     margin-top: 1.5%;
-    margin-right: 4%
+    margin-right: 2%
 }
 
 .label {
-  font-size: 20px;
+  font-size: 18px;
   color: #123C69;
   font-weight: 600;
   font-family: 'Roboto', sans-serif;
@@ -64,7 +64,6 @@ li {
   font-size: 70px;
   top: 200px;
   margin-top: 24%;
-  margin-left: 12%;
 }
 
 .subheader-text {
@@ -72,16 +71,36 @@ li {
   color:rgba(142, 128, 133, 0.82);
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  font-weight: 600;
   margin-top: 0px;
-  margin-left: 10%;
 }
 
 .profile-pic {
   margin-top: 1%;
-  margin-right: 15%;
+  margin-right: 5%;
   height: 555px;
   width: auto;
-  opacity: 0.90;
+  opacity: 0.92;
+}
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle-blue {
+  height: 120px;
+  width:120px;
+  background: #C5CBE3;
+  margin-left: 50%;
+  margin-top: 7%;
+}
+
+.circle-red {
+  height: 100px;
+  width:100px;
+  background: #AC3B61;
+  margin-left: 40%;
 }
 
 #about {
@@ -117,7 +136,7 @@ li {
 #footer {
   width: 100%;
   height: 75px;
-  background-color: #00004d;
+  background-color: #C5CBE3;
 }
 
 .social-icon {
