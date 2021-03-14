@@ -3,6 +3,8 @@ html body {
     bottom:0;
     left:0;
     right:0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -109,28 +111,51 @@ li {
   text-align: center;
   margin: 0 auto;
   background: #FFFBFB;
-  height: 400px;
+  height: 1000px;
   min-height: 100%;
 }
 
-#about-heading {
-  font-family: 'Playfair Display SC', serif;
-  font-size: 60px;
-  margin-top: 30px;
-  margin-left: 40px;
-  text-align: center;
-  color: rgb(161, 46, 118);
-}
-
-#about-paragraph {
-  color: #00004d;
-  margin: 25px 0px 40px 50px;
-  font-size: 20px;
+.about-bio {
+  color: #123C69;
+  font-size: 22px;
   text-align: left;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10%;
 }
 
-.spacing {
-  margin: 60px;
+.about-bio b {
+  font-size: 23px;
+}
+
+.about-bio a:hover {
+  text-decoration: none;
+}
+
+.about-bio a[target=_blank]:after {
+  content: "\2197";
+  margin-left: 4px;
+}
+
+.about-fun {
+  margin-top: 3%;
+  background-color: #E9EDFF;
+  border: 2px solid #123C69;
+  border-radius: 20px;
+}
+
+.about-fun-header {
+  font-size: 22px;
+  color: #123C69;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.about-fun-paragraph {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #123C69;
+  text-align: left;
+  padding: 1% 0 1% 2%;
 }
 
 #footer {
