@@ -52,7 +52,7 @@ li {
   background-color: #EDC7B7;
   background-position: 100% center;
   opacity: .95;
-  height: 79vh;
+  height: 76vh;
   width: 100%;
   min-height: 100%;
   background-size: cover;
@@ -84,7 +84,7 @@ li {
 
 .profile-pic {
   margin-right: 10%;
-  height: 79vh;
+  height: 76vh;
   width: auto;
   opacity: 0.92;
 }
