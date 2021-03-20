@@ -84,7 +84,7 @@ li {
 
 .profile-pic {
   margin-right: 10%;
-  height: 560px;
+  height: 79vh;
   width: auto;
   opacity: 0.92;
 }
@@ -160,8 +160,9 @@ li {
   text-align: center;
   margin: 0 auto;
   background: #FFFBFB;
-  height: 142vh;
+  height: 130vh;
   min-height: 100vh;
+  height: max-content;
 }
 
 .about-bio {
