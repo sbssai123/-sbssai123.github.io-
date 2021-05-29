@@ -14,105 +14,17 @@ $(document).ready(function(){
 });
 
 
-// animation for header section
+// animation for about section
 $(document).ready(function() {
-  $(".border").hide();
-  $(".subhead-text").hide();
-  $(".vl").hide();
-  $(".resume").hide();
-  $(".border").fadeIn(2000, function(){
-    $(".subhead-text").fadeIn(800);
-    $(".vl").slideDown(1000, function(){
-      $(".resume").fadeIn(1000);
-    });
-  });
-});
-
-
-// hover and transition effects for vertical dot nav bar
-$(document).ready(function($){
-        var parPosition = [];
-      $('.container-fluid').each(function() {
-          parPosition.push($(this).offset().top);
+  $(".about-bio").hide();
+  $(".contact-me-all").hide();
+  $(window).scroll(function() {
+    let bottom_of_object = $(".about-bio").position().top + $(".about-bio").outerHeight();
+    let bottom_of_window = $(window).scrollTop() + $(window).height();
+    if (bottom_of_window > bottom_of_object) {
+      $(".about-bio").fadeIn(1800, function(){
+        $(".contact-me-all").fadeIn(500);
       });
-        $('.Navbar ul li a').click(function () {
-    $('.Navbar ul li a').removeClass('active');
-      $(this).addClass('active');
-  });
-     $('.Navbar a').hover(function() {
-         $(this).find('.label').show();
-         }, function() {
-         $(this).find('.label').hide();
-     });
-         $(document).scroll(function(){
-      var position = $(document).scrollTop(),
-              index;
-              for (var i=0; i<parPosition.length; i++) {
-              if (position <= parPosition[i] * 1.5) {
-                  index = i;
-                  break;
-              }
-          }
-    $('.Navbar ul li a').removeClass('active');
-          $('.Navbar ul li a:eq('+index+')').addClass('active');
-      });
-        $('.Navbar ul li a').click(function () {
-    $('.Navbar ul li a').removeClass('active');
-      $(this).addClass('active');
+    }
   });
 });
-
-// Handles fading in and out of navbar
-$(document).ready(function() {
-  $(".Navbar").show();
-});
-
-//Start chart animation when page gets to the skills section
-// for the first time
-$(function() {
-    var oTop = $('#skills .section-heading').offset().top - window.innerHeight;
-    var chartHidden = true;
-    $(window).scroll(function(){
-        var pTop = $('body').scrollTop();
-        if ((pTop > oTop)  && (chartHidden)) {
-            chartHidden = false;
-            start_count("java-chart", 80, 20);
-            start_count("python-chart", 90, 10);
-            start_count("js-chart", 50, 50);
-            start_count("sql-chart", 60, 40);
-            start_count("html-chart", 80, 20);
-        }
-    });
-});
-
-// chart animations
-function start_count(idelement, p1, p2){
-  Chart.defaults.global.animation.duration = 3000;
-  var ctx = document.getElementById(idelement);
-  var myChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-      datasets: [{
-        data: [p1, p2],
-        backgroundColor: ["#a12e76", "#ffffff"]
-      }],
-      labels: [
-        'Java'
-      ]
-    },
-    options: {
-      rotation: .7 * Math.PI,
-      circumference: 2 * Math.PI,
-      tooltips: {enabled: false},
-      hover: {mode: null},
-   legend: {
-     display: false,
-       labels: {
-         display: false
-       }
-     }
-   }
- });
-}
-
-// Timeline ania
