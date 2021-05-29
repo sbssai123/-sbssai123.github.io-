@@ -1,167 +1,99 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Sreeya Sai | Website</title>
-    <link rel="icon" href="img/webpage-icon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--chart.js library-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
-    <link rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-    </script>
-    <script
-    src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-    integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-    crossorigin="anonymous"></script>
-    <!--Bootstrap-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Angular.js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <!-- Modules -->
-    <script src="js/app.js"></script>
-    <!-- Controllers -->
-    <script src="js/MainController.js"></script>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="js/animation.js"></script>
-  </head>
-
-    <body ng-app="PersonalWebsite" ng-controller="MainController">
-
-      <!-- Side Navigation Bar-->
-      <div class="navbar">
-        <ul class="navbar">
-          <li><a class="label btn btn-primary">Resume</a></li>
-          <li><a id="#projects" class="label">Projects</a></li>
-          <li><a class="label" href="#about">About Me</a></li>
-        </ul>
-      </div>
-
-      <!-- Header component-->
-      <div class="container-fluid" id="home">
-          <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-5 header-texts">
-              <h1 class="header-text"> HI, I'M SREEYA</h1>
-              <h3 class="subheader-text">Software Engineer</h3>
-              <div class="cta-buttons">
-                <a class="btn cta-work">My Work</a>
-                <a class="btn cta-contact">Let's Get In Touch</a>
-              </div>
-            </div>
-            <div class="col-sm-5">
-              <div class="circle circle-blue"></div>
-              <div class="circle circle-red"></div>
-              <img class="profile-pic" src="img/profile.png">
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-      </div>
-
-      <!-- About me section -->
-      <div class="container-fluid" id="about">
-        <div class="row">
-          <div class="col-sm-2"></div>
-          <div class="col-sm-8">
-            <p class="about-bio">
-              <b>👋🏽 I'm currently an Engineer at <a href="https://www.drift.com/ " target="_blank">Drift</a></b>, 
-              where I've had the opportunity to work on multiple products and experiences over the past 2 years
-              (i.e. Email Bots, Enterprise Onboarding, Playbooks, Chat Routing). I love digging into hard problems
-              and using data and customer pain to build great experiences!<br>
-              Before that, I got my B.S. in Computer Science from Northeastern University and interned at IBM Research and Catalant.
-              <br><br>
-              Outside of engineering, I am passionate about empowering traditionally underrepresented folks in
-              tech and entrepreneurship. In 2018, <strong>I co-founded <a href="https://techtogether.io/" target="_blank">TechTogether</a></strong>,
-              a national non-profit organization focused on creating safe spaces for women and non-binary individuals to explore
-              careers in tech. Our events have served 2,500 individuals in the past year alone. We also spoke about our work on
-              <a href="https://www.linkedin.com/posts/sreeya-sai_this-past-week-fiona-whittington-and-i-had-activity-6602194028127670272-pbCz " 
-              target="_blank">Capitol Hill</a>.
-              <br><br>
-              I've also dabbled in <strong>early-stage investing at <a href="https://www.roughdraft.vc/" target="_blank">Rough Draft Ventures</a></strong> 
-              (housed under General Catalyst) where we invested in student founded startups. 
-              Read about my <a href="https://medium.com/techtogether/from-coding-to-early-stage-investing-892dd5b159ba" target="_blank">experience</a>!
-            </p>
-          </div>
-          <div class="col-sm-2"></div>
-        </div>
-        <div class="row contact-me-all">
-          <div class="col-sm-2"></div>
-          <div class="col-sm-7 contact-me">
-            <h1 class="contact-me-header">Let's Get In Touch!</h1>
-            <p class="contact-me-subheader">For all things engineering, product, startups, and early-stage investing...</p>
-            <p class="contact-me-paragraph">📧 add me on <strong><a href="https://www.linkedin.com/in/sreeya-sai/" target="_blank">LinkedIn</a></strong> 
-              or <strong>Email</strong> me</p>
-            <p class="contact-me-paragraph">💻 check out my projects on <strong><a href="https://github.com/sbssai123" target="_blank">
-              Github</a></strong></p>
-            <p class="contact-me-paragraph">✒️ I also <strong><a href="https://medium.com/@sreeyasai" target="_blank">
-              Blog</a></strong> sometimes</p>
-          </div>
-          <div class="col-sm-3"></div>
-        </div>
-      </div>
-
-    <!-- Speaking engagements section -->
-    <div class="container-fluid" id="speaking-engagements">
-      <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8">
-          <h1 class="speaking-header">Speaking Engagements & Workshops</h1>
-          <h3 class="speaking-subheader">I am passionate about learning and sharing ideas in tech and entrepreneurship. 
-            <br> Here are some of the topics I've spoken about:
-          </h3>
-        </div>
-      </div>
-      <div class="row speaking-all">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-4">
-          <p class="speaking-text"><a href="https://github.com/sbssai123/messaging-websocket-tutorial" target="_blank">Introduction to Real-Time Communication Using Websockets @ IvyHacks 2020</a></p>
-          <p class="speaking-text"><a href="https://github.com/sbssai123/clarifai-recipe-finder" target="_blank">Introduction to APIs @ AIHacks 2020</a></p>
-          <p class="speaking-text"><a href="https://github.com/sbssai123/marketplace-tutorial" target="_blank">Build an Online Store with Python and Flask <br> @ TechTogether 2020</a></p>
-          <p class="speaking-text"><a href="https://www.linkedin.com/posts/sreeya-sai_this-past-week-fiona-whittington-and-i-had-activity-6602194028127670272-pbCz" target="_blank">Building a Gender-Diverse Future in Technology <br> @ Capitol Hill 2019</a></p>
-        </div>
-        <div class="col-sm-1"></div>
-        <div class="col-sm-4">
-          <p class="speaking-text"><a href="https://github.com/sbssai123/prehacks-python-intro" target="_blank">Introduction to Python and Flask <br> @ PreHacks 2021</a></p>
-          <p class="speaking-text"><a href="https://github.com/sbssai123/spotify-flask-tutorial" target="_blank">Turn Your Playlist Into Code Using the Spotify API <br> @ HobbyHacks 2020</a></p>
-          <p class="speaking-text"><a href="https://twitter.com/sreeyasai/status/1100077400090730497" target="_blank">Introduction to Entreprenurship <br> @ MetroHacks 2019</a></p>
-        </div>
-        <div class="col-sm-1"></div>
-      </div>
-    </div>
-
-  <!--Footer Section -->
-    <div class="container-fluid" id="footer">
+---
+layout: default
+title: My page
+---
+{% include nav.html %}
+  
+  <!-- Header component-->
+  <div class="container-fluid" id="home">
       <div class="row">
         <div class="col-sm-1"></div>
-        <div class="col-sm-3 footer-nav">
-          <ul>
-            <li class="footer-nav-text"><a href="#">Projects</a></li>
-            <li class="footer-nav-text"><a href="#">Resume</a></li>
-            <li class="footer-nav-text"><a href="mailto:sreeyasai0@gmail.com?subject=Saying Hello From Your Personal Website!">Email</a></li>
-          </ul>
+        <div class="col-sm-5 header-texts">
+          <h1 class="header-text"> HI, I'M SREEYA</h1>
+          <h3 class="subheader-text">Software Engineer</h3>
+          <div class="cta-buttons">
+            <a class="btn cta-work" href="projects">My Work</a>
+            <a class="btn cta-contact">Let's Get In Touch</a>
+          </div>
         </div>
-        <div class="col-sm-3 social-icons">
-          <a href="https://www.linkedin.com/in/sreeya-sai/" target="_blank"><img class="social-icon" src="img/linkedin-white.png"></a>
-          <a href="https://github.com/sbssai123" target="_blank"><img class="social-icon" src="img/github-white.png"></a>
-          <a href="https://www.linkedin.com/in/sreeya-sai/" target="_blank"><img class="social-icon" src="img/linkedin-white.png"></a>
+        <div class="col-sm-5">
+          <div class="circle circle-blue"></div>
+          <div class="circle circle-red"></div>
+          <img class="profile-pic" src="img/profile.png">
         </div>
-        <div class="col-sm-3">
-          <p class="footer-text">
-            This website was made with ❤️ by me! <br> 
-            Check out the original design I made on <a href="https://www.figma.com/file/etfpOanTzt2QGHJvvkScGK/Personal-Website?node-id=0%3A1" target="_blank">Figma</a>
-          </p>
-        </div>
-        <div class="col-sm-2"></div>
-      </div>
+        <div class="col-sm-1"></div>
     </div>
-  </body>
+  </div>
+  
+  <!-- About me section -->
+  <div class="container-fluid" id="about">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <p class="about-bio">
+          <b>👋🏽 I'm currently an Engineer at <a href="https://www.drift.com/ " target="_blank">Drift</a></b>, 
+          where I've had the opportunity to work on multiple products and experiences over the past 2 years
+          (i.e. Email Bots, Enterprise Onboarding, Playbooks, Chat Routing). I love digging into hard problems
+          and using data and customer pain to build great experiences!<br>
+          Before that, I got my B.S. in Computer Science from Northeastern University and interned at IBM Research and Catalant.
+          <br><br>
+          Outside of engineering, I am passionate about empowering traditionally underrepresented folks in
+          tech and entrepreneurship. In 2018, <strong>I co-founded <a href="https://techtogether.io/" target="_blank">TechTogether</a></strong>,
+          a national non-profit organization focused on creating safe spaces for women and non-binary individuals to explore
+          careers in tech. Our events have served 2,500 individuals in the past year alone. We also spoke about our work on
+          <a href="https://www.linkedin.com/posts/sreeya-sai_this-past-week-fiona-whittington-and-i-had-activity-6602194028127670272-pbCz " 
+          target="_blank">Capitol Hill</a>.
+          <br><br>
+          I've also dabbled in <strong>early-stage investing at <a href="https://www.roughdraft.vc/" target="_blank">Rough Draft Ventures</a></strong> 
+          (housed under General Catalyst) where we invested in student founded startups. 
+          Read about my <a href="https://medium.com/techtogether/from-coding-to-early-stage-investing-892dd5b159ba" target="_blank">experience</a>!
+        </p>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+    <div class="row contact-me-all">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-7 contact-me">
+        <h1 class="contact-me-header">Let's Get In Touch!</h1>
+        <p class="contact-me-subheader">For all things engineering, product, startups, and early-stage investing...</p>
+        <p class="contact-me-paragraph">📧 add me on <strong><a href="https://www.linkedin.com/in/sreeya-sai/" target="_blank">LinkedIn</a></strong> 
+          or <strong>Email</strong> me</p>
+        <p class="contact-me-paragraph">💻 check out my projects on <strong><a href="https://github.com/sbssai123" target="_blank">
+          Github</a></strong></p>
+        <p class="contact-me-paragraph">✒️ I also <strong><a href="https://medium.com/@sreeyasai" target="_blank">
+          Blog</a></strong> sometimes</p>
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+  </div>
+  
+  <!-- Speaking engagements section -->
+  <div class="container-fluid" id="speaking-engagements">
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <h1 class="speaking-header">Speaking Engagements & Workshops</h1>
+      <h3 class="speaking-subheader">I am passionate about learning and sharing ideas in tech and entrepreneurship. 
+        <br> Here are some of the topics I've spoken about:
+      </h3>
+    </div>
+  </div>
+  <div class="row speaking-all">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4">
+      <p class="speaking-text"><a href="https://github.com/sbssai123/messaging-websocket-tutorial" target="_blank">Introduction to Real-Time Communication Using Websockets @ IvyHacks 2020</a></p>
+      <p class="speaking-text"><a href="https://github.com/sbssai123/clarifai-recipe-finder" target="_blank">Introduction to APIs @ AIHacks 2020</a></p>
+      <p class="speaking-text"><a href="https://github.com/sbssai123/marketplace-tutorial" target="_blank">Build an Online Store with Python and Flask <br> @ TechTogether 2020</a></p>
+      <p class="speaking-text"><a href="https://www.linkedin.com/posts/sreeya-sai_this-past-week-fiona-whittington-and-i-had-activity-6602194028127670272-pbCz" target="_blank">Building a Gender-Diverse Future in Technology <br> @ Capitol Hill 2019</a></p>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4">
+      <p class="speaking-text"><a href="https://github.com/sbssai123/prehacks-python-intro" target="_blank">Introduction to Python and Flask <br> @ PreHacks 2021</a></p>
+      <p class="speaking-text"><a href="https://github.com/sbssai123/spotify-flask-tutorial" target="_blank">Turn Your Playlist Into Code Using the Spotify API <br> @ HobbyHacks 2020</a></p>
+      <p class="speaking-text"><a href="https://twitter.com/sreeyasai/status/1100077400090730497" target="_blank">Introduction to Entreprenurship <br> @ MetroHacks 2019</a></p>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+</div>
 
-</html>
+  {% include footer.html %}
