@@ -3,4 +3,4 @@ Gemfile.lock
 .jekyll-cache/
 .vscode
 .DS_Store
-img/.DS_Store
+/img/.DS_Store
